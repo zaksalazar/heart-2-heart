@@ -1,40 +1,14 @@
 const { Schema, model } = require("mongoose");
+const { modelName } = require("./genericItems");
 
 const genericItemsSchema = new Schema(
-  {
 {
-  name: "Baby Formula",
-  category: "Baby"
-},
+name: {type: String, required: true }, 
 
-{
-  name: "diapers",
-  category: "baby"
+category: {type: String, }
 },
-
-{
-  name: "socks",
-  category: "clothing"
-},
-
-{
-  name: "propane",
-  category: "home goods"
-},
-
-{
-  name: "sleeping Bag",
-  category: "camping"
-},
-
-{
-  name: "tooth brush",
-  category: "hygiene"
-
-},
-}
 );
 
-const generticItems = model("generic", genericItemsSchema);
+const genericItems = model("generic", genericItemsSchema);
 
-module.exports = genertic; 
+module.exports = generic; 
