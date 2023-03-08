@@ -6,7 +6,7 @@ const app = express();
 const port = 3001;
 
 // Connection string to local instance of MongoDB including database name
-const connectionStringURI = `mongodb://127.0.0.1:27017/shelterDB`;
+const connectionStringURI = `mongodb://127.0.0.1:27017/heart2heart`;
 
 // Declare a variable to hold the connection
 let db;
@@ -27,3 +27,5 @@ mongodb.connect(
 );
 
 app.use(express.json());
+
+
