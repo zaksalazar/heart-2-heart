@@ -5,25 +5,25 @@ const genericItemsSchema = new Schema(
 {
   name: "Baby Formula",
   category: "Baby"
-}
+},
 
 {
-  Name: "diapers",
+  name: "diapers",
   category: "baby"
 },
 
 {
-  name: "Socks",
+  name: "socks",
   category: "clothing"
 },
 
 {
-  name: "Propane",
+  name: "propane",
   category: "home goods"
 },
 
 {
-  name: "Sleeping Bag",
+  name: "sleeping Bag",
   category: "camping"
 },
 
