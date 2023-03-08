@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.0.13"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
