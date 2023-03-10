@@ -2,17 +2,18 @@ import { useState } from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
+import Homepage from "./components/homepage";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <div>
+      {/* <div>
         <Navbar />
-      </div>
+      </div> */}
       <div>
-        <Signup />
+        <Homepage />
       </div>
     </div>
   );
