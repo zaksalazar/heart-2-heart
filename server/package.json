@@ -1,6 +1,18 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.0.1"
+    "mongoose": "^7.0.1", 
+    "mongodb": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }

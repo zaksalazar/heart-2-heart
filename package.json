@@ -3,26 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "server/server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
+  "keywords": [],
+  "author": "",
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@fontsource/roboto": "^4.5.8",
-    "@mui/material": "^5.11.12",
-    "mongodb": "^4.5.0",
-    "mongoose": "^6.0.13",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^3.1.0",
-    "tailwindcss": "^3.2.7",
-    "vite": "^4.1.0"
+    "concurrently": "^7.6.0"
   }
 }
