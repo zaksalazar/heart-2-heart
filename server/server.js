@@ -1,6 +1,8 @@
+
 const express = require('express');
 // Run npm install mongodb and require mongodb and MongoClient class
 const mongodb = require('mongodb').MongoClient;
+
 
 const app = express();
 const port = 3001;
@@ -10,6 +12,7 @@ const connectionStringURI = `mongodb://127.0.0.1:27017/heart2heart`;
 
 // Declare a variable to hold the connection
 let db;
+
 
 // Creates a connection to a MongoDB instance and returns the reference to the database
 mongodb.connect(
@@ -27,4 +30,5 @@ mongodb.connect(
 );
 
 app.use(express.json());
+
 
