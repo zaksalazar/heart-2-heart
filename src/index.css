@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: whitesmoke;
+}
+
+.footer {
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+  justify-content: flex-end;
+}
