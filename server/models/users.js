@@ -1,4 +1,5 @@
 const { Schema, model, Types } = require("mongoose");
+const mongoose = require('mongoose');
 
 const userSchema = new Schema(
   {
@@ -23,18 +24,26 @@ const userSchema = new Schema(
       required: true
     },
   },
-  {
-    toJSON: {
-      virtuals: true,
-    },
-    id: false,
-  }
+  // {
+  //   toJSON: {
+  //     virtuals: true,
+  //   },
+  //   id: false,
+  // }
 );
 
-userSchema.virtual("friendCount").get(function () {
-  return this.friends.length;
-});
+const Users = mongoose.model('users', userSchema);
 
-const User = model('user', userSchema);
+const handleError = (err) => console.error(err);
 
-module.exports = User;
+Users.create(
+  {
+  username: 'Test User',
+  email: 'test@example.com',
+  firstname: 'Test',
+  lastname: 'User', 
+  },
+  (err) => (err ? handleError(err) : console.log('Created new document'))
+); 
+
+module.exports = Users;

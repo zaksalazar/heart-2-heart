@@ -1,7 +1,13 @@
 const genericItems = [
 {
-    Name: "diapers",
+    name: "diapers",
     category: "baby"
+  },
+
+  {
+    name: "formula",
+    category: "baby"
+
   },
   
   {

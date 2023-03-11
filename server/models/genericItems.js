@@ -1,5 +1,6 @@
 const { Schema, model } = require("mongoose");
 const { modelName } = require("./genericItems");
+const mongoose = require('mongoose');
 
 const genericItemsSchema = new Schema(
 {
@@ -11,4 +12,4 @@ category: {type: String, }
 
 const genericItems = model("generic", genericItemsSchema);
 
-module.exports = generic; 
+module.exports = genericItems; 
