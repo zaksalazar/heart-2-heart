@@ -5,6 +5,7 @@ import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
 import Team from "./components/Team";
+import ListingPage from "./components/ListingPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,9 @@ function App() {
         <Explainer />
       </div>
       <div>
+        <ListingPage />
+      </div>
+      <div className="pt-10">
         <Team />
       </div>
     </div>
