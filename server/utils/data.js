@@ -22,6 +22,9 @@ const genericItems = [
   {
     name: "tooth brush",
     category: "hygiene"
-  
+  },
+  {
+    name: "formula",
+    category:"baby"
   },
 ]
