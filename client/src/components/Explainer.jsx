@@ -12,13 +12,13 @@ function Explainer() {
                 tabIndex={0}
                 className="focus:outline-none uppercase text-sm text-center text-gray-600 leading-4"
               >
-                in few easy steps
+                ________________________________________________________________
               </p>
               <hh1
                 tabIndex={0}
                 className="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4"
               >
-                Create Beautiful Landing Pages &amp; Web Apps in a Jiffy
+                How it all works...
               </hh1>
             </div>
             <div
@@ -45,15 +45,14 @@ function Explainer() {
                     tabIndex={0}
                     className="focus:outline-none text-lg font-bold leading-tight text-gray-800"
                   >
-                    Ready to use components
+                    1. Family in need
                   </h2>
                   <p
                     tabIndex={0}
                     className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
                   >
-                    It provides a very simple start, no need to write a lot of
-                    code, you just import it and start the primitive components
-                    and create the ones you need.
+                    A family creates a profile with basic needs. These can be
+                    school supplies, clothes, or furniture items.
                   </p>
                 </div>
               </div>
@@ -76,15 +75,15 @@ function Explainer() {
                     tabIndex={0}
                     className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
                   >
-                    Hight Quality UI you can reply on
+                    Local neighbors help
                   </h2>
                   <p
                     tabIndex={0}
                     className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
                   >
-                    Modify the visual appearance of your site – including
-                    colors, fonts, margins and other style-related properties –
-                    with a sophisticated style.
+                    Local community members can create an account and see what
+                    items they can donate for a specific family. Items can be
+                    new or slightly used.
                   </p>
                 </div>
               </div>
@@ -107,15 +106,14 @@ function Explainer() {
                     tabIndex={0}
                     className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
                   >
-                    Coded by Developers for Developers
+                    Donations are coordinated
                   </h2>
                   <p
                     tabIndex={0}
                     className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
                   >
-                    Instead of just giving you the tools to create your own
-                    site, they offer you a list of themes you can choose from.
-                    Thus a handy product.
+                    A donation location is set up to get the needed items to the
+                    family.
                   </p>
                 </div>
               </div>
@@ -138,15 +136,14 @@ function Explainer() {
                     tabIndex={0}
                     className="focus:outline-none text-lg font-semibold leading-tight text-gray-800"
                   >
-                    The Last UI kit you’ll ever need
+                    Social good created
                   </h2>
                   <p
                     tabIndex={0}
                     className="focus:outline-none text-base text-gray-600 leading-normal pt-2"
                   >
-                    We have chosen the bright color palettes that arouse the
-                    only positive emotions. The kit that simply assures to be
-                    loved by everyone.
+                    Take joy in knowing that you are helping a specific family
+                    in need in your local community.
                   </p>
                 </div>
               </div>

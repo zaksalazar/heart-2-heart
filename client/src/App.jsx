@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
+import Team from "./components/Team";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div>
         <Explainer />
+      </div>
+      <div>
+        <Team />
       </div>
     </div>
   );
