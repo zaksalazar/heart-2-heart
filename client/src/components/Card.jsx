@@ -46,7 +46,7 @@ const Card = () => {
           // style={{
           //   backgroundImage: `url(${data.famPhoto})`,
           // }}
-          className="bg-yellow-200 h-52 sm:h-full sm:w-72 rounded-xl"
+          className="bg-yellow-400 h-25 sm:h-full sm:w-72 rounded-xl"
         ></div>
         <div className="flex flex-col flex-1 gap-5 sm:p-2">
           <div className="flex flex-col flex-1 gap-3">
