@@ -1,0 +1,35 @@
+const router = require('express').Router();
+const {User} = require("../../models")
+
+// Route that gets all the users
+router.get('/', async (req, res) => {
+    try {
+        const users = await User.find({})
+        res.status(200).json(users)
+    } catch (err) {
+        console.log(err)
+        res.send(err)
+    }
+})
+
+// Route that creates new user
+router.post('/', async (req,res) => {
+    try {
+        const user = await User.create({
+        username: req.body.username,
+        email: req.body.email,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname
+        })
+        res.status(200).json(user)
+    } catch (err) {
+        console.log(err)
+        res.send(err)
+    }
+})
+
+// Route that gets single user based on user id
+
+// Route that updates single user
+
+module.exports = router;
