@@ -12,6 +12,17 @@ router.get('/', async (req, res) => {
     }
 })
 
+// Route that gets single user based on user id
+router.get('/:userId', async (req, res) => {
+    try {
+        const user = await User.findById(req.params.userId)
+        res.status(200).json(user)
+    } catch (err) {
+        console.log(err)
+        res.send(err)
+    }
+})
+
 // Route that creates new user
 router.post('/', async (req,res) => {
     try {
@@ -28,8 +39,19 @@ router.post('/', async (req,res) => {
     }
 })
 
-// Route that gets single user based on user id
+// Route that updates single user based on user id
+router.put('/:userId', async (req, res) => {
+    try {
+        const options = {new: true}
+        const updatedUser = await User.findByIdAndUpdate(req.params.userId, req.body, options)
+        res.status(200).json(updatedUser)
+    } catch (err) {
+        console.log(err)
+        res.send(err)
+    }
+})
 
-// Route that updates single user
+
+// Route that deletes single user based on user id
 
 module.exports = router;
