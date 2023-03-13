@@ -5,10 +5,20 @@ import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
 import Team from "./components/Team";
-import ListingPage from "./components/ListingPage";
+import Card from "./components/Card";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  // const cards = [
+  //   {
+  //     id: "card-1",
+  //     name: "Owens Family",
+  //     bio: "we Lost our jobs and we need help",
+  //     buttonText1: "Clothing",
+  //     buttonText2: "School Supplies",
+  //   },
+  // ];
 
   return (
     <div className="App">
@@ -21,9 +31,21 @@ function App() {
       <div>
         <Explainer />
       </div>
+
       <div>
-        <ListingPage />
+        <Card />
       </div>
+
+      {/* <div className=" p-20 ">
+        {cards.map((card) => {
+          return (
+            <div key={card.id}>
+              <Card data={card} />
+            </div>
+          );
+        })}
+      </div> */}
+
       <div className="pt-10">
         <Team />
       </div>

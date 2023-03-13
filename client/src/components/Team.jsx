@@ -14,7 +14,7 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="./public/assets/images/canaan.webp"
+                src="/assets/images/canaan.webp"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -84,7 +84,7 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="./public/assets/images/Zak.png"
+                src="/assets/images/Zak.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -154,7 +154,7 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="./public/assets/images/rudy.png"
+                src="/assets/images/rudy.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -225,7 +225,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt="profil"
-                src="./public/assets/images/John.png"
+                src="/assets/images/John.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -295,8 +295,8 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                alt="profil"
-                src=""
+                alt=""
+                src="/assets/images/Dillon.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
