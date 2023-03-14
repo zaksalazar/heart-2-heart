@@ -6,6 +6,7 @@ import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
 import Team from "./components/Team";
 import Card from "./components/Card";
+// import Dashboard from "./components/Dashboard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,15 +23,16 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div>
+      <div>
         <Navbar />
-      </div> */}
+      </div>
       <div>
         <Homepage />
       </div>
       <div>
         <Explainer />
       </div>
+      <div>{/* <Dashboard /> */}</div>
 
       <div>
         <Card />

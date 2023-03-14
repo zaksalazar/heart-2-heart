@@ -2,7 +2,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800" id="team">
       <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
         Professional team
       </p>
@@ -296,7 +296,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt=""
-                src="/assets/images/Dillon.png"
+                src="/assets/images/dillon.jpg"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -305,7 +305,7 @@ const Team = () => {
           <div class="text-center">
             <p class="text-2xl text-gray-800 dark:text-white">Dillon</p>
             <p class="text-xl font-light text-gray-500 dark:text-gray-200">
-              CTO
+              Developer
             </p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
               Dillon blurb for a couple rows of text
