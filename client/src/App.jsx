@@ -3,6 +3,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
+import Explainer from "./components/Explainer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,9 @@ function App() {
       </div> */}
       <div>
         <Homepage />
+      </div>
+      <div>
+        <Explainer />
       </div>
     </div>
   );
