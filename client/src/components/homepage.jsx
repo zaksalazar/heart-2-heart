@@ -4,7 +4,7 @@ function Homepage() {
   const [show, setShow] = useState(false);
   return (
     <div
-      className="bg-gray-100 pb-12 overflow-y-hidden"
+      className="bg-gray-200 pb-12 overflow-y-hidden"
       style={{ minHeight: 700 }}
     >
       {/* Code block starts */}
