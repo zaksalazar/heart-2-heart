@@ -1,9 +1,13 @@
 // First page rendered to user when they come to site
 import React, { useState } from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 =======
 import background from "/public/assets/images/familyPlaceholder.jpeg";
+=======
+import background from "/public/assets/images/fam1.jpg";
+>>>>>>> 821da1d (pushing to start with mobile layout first)
 
 >>>>>>> 33d5713 (added homepage elements and changed signin button)
 function Homepage() {
