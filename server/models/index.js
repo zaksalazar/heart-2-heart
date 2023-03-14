@@ -1,5 +1,5 @@
 const User = require('./users')
-const Supplies = require('./supplies')
+const Supply = require('./supplies')
 const genericItems = require('./genericItems')
 
-module.exports = { User, Supplies, genericItems };
+module.exports = { User, Supply, genericItems };
