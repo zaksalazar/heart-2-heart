@@ -36,11 +36,11 @@ function App() {
       />
       <Route 
         path = "/signup"
-        element = {<signup/>}
+        element = {<Signup/>}
       />
       <Route 
         path = "/post"
-        element = {<card/>}
+        element = {<Card/>}
       />
       <Route 
         path="/post/:postId" 
