@@ -8,6 +8,8 @@ import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
 import Team from "./components/Team";
 import Card from "./components/Card";
+import Helper from "./components/Helper";
+import NewPost from "./components/NewPost";
 // import Dashboard from "./components/Dashboard";
 
 
@@ -30,6 +32,7 @@ function App() {
       {/* <div>
         <Navbar />
       </div> */}
+<<<<<<< HEAD
   <Router> 
     <Routes>
       <Route
@@ -62,11 +65,23 @@ function App() {
       //   <Explainer />
       // </div>
       // <div>{/* <Dashboard /> */}</div>
+=======
+
+      {/* New Family creating a post */}
+      {/* <div>
+        <NewPost />
+      </div> */}
+
+      {/* <div>
+        <Helper />
+      </div> */}
+>>>>>>> bcc93a2 (added a bunch)
 
       // <div>
       //   <Card />
       // </div>
 
+<<<<<<< HEAD
       // {/* <div className=" p-20 ">
       //   {cards.map((card) => {
       //     return (
@@ -81,6 +96,28 @@ function App() {
     //     <Team />
     //   </div> */}
     // </div>
+=======
+      <div>{/* <Homepage /> */}</div>
+      <div>{/* <Explainer /> */}</div>
+      <div>{/* <Dashboard /> */}</div>
+
+      <div>{/* <Card /> */}</div>
+
+      {/* <div className=" p-20 ">
+        {cards.map((card) => {
+          return (
+            <div key={card.id}>
+              <Card data={card} />
+            </div>
+          );
+        })}
+      </div> */}
+
+      {/* <div className="pt-10">
+        <Team />
+        </div> */}
+    </div>
+>>>>>>> bcc93a2 (added a bunch)
   );
 }
 
