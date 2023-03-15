@@ -2,7 +2,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800" id="team">
+    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
       <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
         Professional team
       </p>
