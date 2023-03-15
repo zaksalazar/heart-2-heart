@@ -28,8 +28,8 @@ function App() {
       {/* <div>
         <Navbar />
       </div> */}
-    < Router /> 
-      <Routes>
+  <Router> 
+    <Routes>
       <Route
         path = "/"
         element= {<Homepage/>}
@@ -45,37 +45,41 @@ function App() {
       <Route 
         path="/post/:postId" 
         element={<Card />}
-        />
+      />
+      <Route 
+        path="/aboutus"
+        element={<Team />}
+      />
+    </Routes>
+  </Router>
       
-      </Routes>
-      <div>
-        <Homepage />
-      </div>
-      <div>
-        <Explainer />
-      </div>
-      <div>{/* <Dashboard /> */}</div>
+      // <div>
+      //   <Homepage />
+      // </div>
+      // <div>
+      //   <Explainer />
+      // </div>
+      // <div>{/* <Dashboard /> */}</div>
 
-      <div>
-        <Card />
-      </div>
+      // <div>
+      //   <Card />
+      // </div>
 
-      {/* <div className=" p-20 ">
-        {cards.map((card) => {
-          return (
-            <div key={card.id}>
-              <Card data={card} />
-            </div>
-          );
-        })}
-      </div> */}
+      // {/* <div className=" p-20 ">
+      //   {cards.map((card) => {
+      //     return (
+      //       <div key={card.id}>
+      //         <Card data={card} />
+      //       </div>
+      //     );
+      //   })}
+      // </div> */}
 
-      <div className="pt-10">
-        <Team />
-      </div>
-    </div>
+    //   <div className="pt-10">
+    //     <Team />
+    //   </div>
+    // </div>
   );
 }
-<Router />
 
 export default App;
