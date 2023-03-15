@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./index.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
@@ -26,32 +28,57 @@ function App() {
       {/* <div>
         <Navbar />
       </div> */}
-      <div>
-        <Homepage />
-      </div>
-      <div>
-        <Explainer />
-      </div>
-      <div>{/* <Dashboard /> */}</div>
+  <Router> 
+    <Routes>
+      <Route
+        path = "/"
+        element= {<Homepage/>}
+      />
+      <Route 
+        path = "/signup"
+        element = {<Signup/>}
+      />
+      <Route 
+        path = "/post"
+        element = {<Card/>}
+      />
+      <Route 
+        path="/post/:postId" 
+        element={<Card />}
+      />
+      <Route 
+        path="/aboutus"
+        element={<Team />}
+      />
+    </Routes>
+  </Router>
+      
+      // <div>
+      //   <Homepage />
+      // </div>
+      // <div>
+      //   <Explainer />
+      // </div>
+      // <div>{/* <Dashboard /> */}</div>
 
-      <div>
-        <Card />
-      </div>
+      // <div>
+      //   <Card />
+      // </div>
 
-      {/* <div className=" p-20 ">
-        {cards.map((card) => {
-          return (
-            <div key={card.id}>
-              <Card data={card} />
-            </div>
-          );
-        })}
-      </div> */}
+      // {/* <div className=" p-20 ">
+      //   {cards.map((card) => {
+      //     return (
+      //       <div key={card.id}>
+      //         <Card data={card} />
+      //       </div>
+      //     );
+      //   })}
+      // </div> */}
 
-      <div className="pt-10">
-        <Team />
-      </div>
-    </div>
+    {/* //   <div className="pt-10">
+    //     <Team />
+    //   </div> */}
+    // </div>
   );
 }
 
