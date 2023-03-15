@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useParams } from "react-router-dom";
@@ -9,6 +9,8 @@ import Explainer from "./components/Explainer";
 import Team from "./components/Team";
 import Card from "./components/Card";
 // import Dashboard from "./components/Dashboard";
+
+
 
 function App() {
   const [count, setCount] = useState(0);
