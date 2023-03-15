@@ -1,6 +1,24 @@
 const router = require('express').Router();
 const {User} = require("../../models")
 
+// Route that logs in
+router.post('/login', async ( {body}, res ) => {
+    const user = await User.findOne({  username: body.username  });
+    if (!user) {
+      return res.status(400).json({ message: "Can't find this user" });
+    }
+
+    const correctPw = await user.isCorrectPassword(body.password);
+
+    if (!correctPw) {
+      return res.status(400).json({ message: 'Wrong password!' });
+    }
+    res.json(user)
+    // const token = signToken(user);
+    // res.json({ token, user });
+})
+
+
 // Route that gets all the users
 router.get('/', async (req, res) => {
     try {
@@ -30,7 +48,8 @@ router.post('/', async (req,res) => {
         username: req.body.username,
         email: req.body.email,
         firstname: req.body.firstname,
-        lastname: req.body.lastname
+        lastname: req.body.lastname,
+        password: req.body.password
         })
         res.status(200).json(user)
     } catch (err) {
