@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./index.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Homepage from "./components/homepage";
@@ -26,6 +28,26 @@ function App() {
       {/* <div>
         <Navbar />
       </div> */}
+    < Router /> 
+      <Routes>
+      <Route
+        path = "/"
+        element= {<Homepage/>}
+      />
+      <Route 
+        path = "/signup"
+        element = {<signup/>}
+      />
+      <Route 
+        path = "/post"
+        element = {<card/>}
+      />
+      <Route 
+        path="/post/:postId" 
+        element={<Card />}
+        />
+      
+      </Routes>
       <div>
         <Homepage />
       </div>
@@ -54,5 +76,6 @@ function App() {
     </div>
   );
 }
+<Router />
 
 export default App;
