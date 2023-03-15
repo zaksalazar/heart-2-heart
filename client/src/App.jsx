@@ -75,9 +75,9 @@ function App() {
       //   })}
       // </div> */}
 
-    //   <div className="pt-10">
+    {/* //   <div className="pt-10">
     //     <Team />
-    //   </div>
+    //   </div> */}
     // </div>
   );
 }
