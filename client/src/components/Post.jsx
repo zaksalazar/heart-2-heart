@@ -1,7 +1,12 @@
 import React from "react";
+import Card from "./Card";
 
-const ViewSinglePost = () => {
-  return <div>ViewSinglePost</div>;
+const Post = () => {
+  return (
+    <div>
+      <Card />
+    </div>
+  );
 };
 
-export default ViewSinglePost;
+export default Post;

@@ -7,6 +7,7 @@ import Homepage from "./components/Homepage";
 import CreatePost from "./components/CreatePost";
 import Post from "./components/PostList";
 import PostsList from "./components/PostList";
+import Navbar from "./components/Navbar";
 // import Dashboard from "./components/Dashboard";
 
 function App() {

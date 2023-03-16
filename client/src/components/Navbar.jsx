@@ -1,6 +1,6 @@
 import React from "react";
 
-const NewNav = () => {
+const Navbar = () => {
   return (
     <div>
       <nav className="w-full border-b">
@@ -82,4 +82,4 @@ const NewNav = () => {
   );
 };
 
-export default NewNav;
+export default Navbar;

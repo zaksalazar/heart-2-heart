@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import background from "/public/assets/images/familyPlaceholder.jpeg";
 import Explainer from "./Explainer";
 import Team from "./Team";
+import Navbar from "./Navbar";
 
 function Homepage() {
   const [show, setShow] = useState(false);
   return (
     <div className="pb-12 overflow-y-hidden" style={{ minHeight: 700 }}>
-      {/* Code block starts */}
       <dh-component>
         <nav className="w-full border-b">
           <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
@@ -121,7 +121,6 @@ function Homepage() {
           </div>
         </div>
       </dh-component>
-      {/* Code block ends */}
       <Explainer />
       <Team />
     </div>
