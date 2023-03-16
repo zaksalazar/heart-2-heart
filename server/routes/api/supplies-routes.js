@@ -28,9 +28,10 @@ router.post('/', async (req, res) => {
     try {
         const supply = await Supply.create({
             recipientId: req.body.recipientId,
-            fulfilled: req.body.fulfilled,
-            items: req.body.items,
-            description: req.body.description
+            title: req.body.title,
+            description: req.body.description,
+            tags: req.body.tags,
+            county: req.body.county
         })
         res.status(200).json(supply)
     } catch (err) {

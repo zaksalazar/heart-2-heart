@@ -6,26 +6,44 @@ const supplySchema = new Schema(
       //object id type for mongodb
       type: Schema.Types.ObjectId,
     },
-    fulfilled: {
-      type: Boolean,
-      default: false,
+    title: {
+      type: String,
+      required: true
     },
-    items: [
+    description: {
+      type: String,
+      required: true
+    },
+    tags: [
       {
-        name: String,
-        description: String,
-        quantity: Number,
-        size: String,
-        sponsorId: Schema.Types.ObjectId,
-      },
+      type: String,
+      }
     ],
+    county: {
+      type: String,
+      enum: {
+        values: ['Los Angeles', 'Orange', 'Riverside'],
+        message: '{VALUE} is not supported'
+      }
+    }
+    // fulfilled: {
+    //   type: Boolean,
+    //   default: false,
+    // },
+    // items: [
+    //   {
+    //     name: String,
+    //     description: String,
+    //     quantity: Number,
+    //     size: String,
+    //     sponsorId: Schema.Types.ObjectId,
+    //   },
+    // ],
     // qty: {
     //   type: Number,
     //   required: true
 
-    description: {
-      type: String,
-    },
+    
   }
 );
 
