@@ -11,6 +11,7 @@ import Card from "./components/Card";
 import Helper from "./components/Helper";
 import NewPost from "./components/NewPost";
 import Drop from "./components/Drop";
+import ViewPosts from "./components/ViewPosts";
 // import Dashboard from "./components/Dashboard";
 
 
@@ -68,14 +69,11 @@ function App() {
       // <div>{/* <Dashboard /> */}</div>
 =======
 
-      <div>
+      {/* <div>
         <Homepage />
-      </div>
+      </div> */}
 
       {/* New Family creating a post */}
-      {/* <div>
-        <NewPost />
-      </div> */}
 
       {/* <div>
         <Helper />
@@ -88,8 +86,16 @@ function App() {
       // </div>
 =======
       {/* <div>
+        <NewPost />
+      </div> */}
+
+      {/* <div>
         <Drop />
       </div> */}
+
+      <div>
+        <ViewPosts />
+      </div>
 
       {/* <div>
         <Card />

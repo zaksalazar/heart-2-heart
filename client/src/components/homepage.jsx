@@ -11,7 +11,11 @@ import background from "/public/assets/images/fam1.jpg";
 >>>>>>> 821da1d (pushing to start with mobile layout first)
 =======
 import Explainer from "./Explainer";
+<<<<<<< HEAD
 >>>>>>> 1b3799a (added explainer to homepage)
+=======
+import Team from "./Team";
+>>>>>>> 7d942e1 (added a ViewPosts component to display all posts in that county)
 
 >>>>>>> 33d5713 (added homepage elements and changed signin button)
 function Homepage() {
@@ -131,6 +135,9 @@ function Homepage() {
       </dh-component>
       <div>
         <Explainer />
+      </div>
+      <div>
+        <Team />
       </div>
     </div>
   );
