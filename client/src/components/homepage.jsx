@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import background from "/public/assets/images/familyPlaceholder.jpeg";
+import Explainer from "./Explainer";
+import Team from "./Team";
 
 function Homepage() {
   const [show, setShow] = useState(false);
@@ -120,6 +122,8 @@ function Homepage() {
         </div>
       </dh-component>
       {/* Code block ends */}
+      <Explainer />
+      <Team />
     </div>
   );
 }
