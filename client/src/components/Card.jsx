@@ -1,37 +1,24 @@
 // page with the families in need in one page
 import React from "react";
-import background from "/public/assets/images/familyPlaceholder.jpeg";
-import Drop from "./Drop";
 
 const Card = () => {
   return (
-    <div
-      className="flex flex-col justify-center items-center mt-8 backdrop-blur-sm"
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="mt-6 mb-10">
-        <Drop />
-      </div>
+    <div>
       <div className="flex flex-col justify-center items-center w-4/5 mt-8">
         <a
           href="#"
-          class="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+          className="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
             src="assets/images/fam1.jpg"
             alt=""
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">
               The Owens Family
             </h5>
-            <p class="mb-3 font-normal text-gray-600">
+            <p className="mb-3 font-normal text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
               laborum, vero aspernatur similique magnam quisquam nihil voluptas
               temporibus a, illo dolorem at id ad culpa ut nisi placeat rem hic.
@@ -42,18 +29,18 @@ const Card = () => {
       <div className="flex flex-col justify-center items-center w-4/5 mt-8 mb-20">
         <a
           href="#"
-          class="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+          className="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
             src="assets/images/fam1.jpg"
             alt=""
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">
               The Owens Family
             </h5>
-            <p class="mb-3 font-normal text-gray-600">
+            <p className="mb-3 font-normal text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
               laborum, vero aspernatur similique magnam quisquam nihil voluptas
               temporibus a, illo dolorem at id ad culpa ut nisi placeat rem
