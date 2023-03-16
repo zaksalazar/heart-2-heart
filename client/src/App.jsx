@@ -55,17 +55,7 @@ function App() {
     </Routes>
   </Router>
       
-      // <div>
-      //   <Homepage />
-      // </div>
-      // <div>
-      //   <Explainer />
-      // </div>
-      // <div>{/* <Dashboard /> */}</div>
-
-      // <div>
-      //   <Card />
-      // </div>
+ 
 
       // {/* <div className=" p-20 ">
       //   {cards.map((card) => {
@@ -80,7 +70,7 @@ function App() {
     {/* //   <div className="pt-10">
     //     <Team />
     //   </div> */}
-    // </div>
+    </div>
   );
 }
 
