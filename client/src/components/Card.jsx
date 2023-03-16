@@ -1,6 +1,7 @@
 // page with the families in need in one page
 import React from "react";
 import background from "/public/assets/images/familyPlaceholder.jpeg";
+import Drop from "./Drop";
 
 const Card = () => {
   return (
@@ -13,18 +14,10 @@ const Card = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col w-1/3 mb-3 mt-5">
-        <h3 className="mb-4 font-semibold text-gray-900">Location:</h3>
-        <span className="h-full leading-snug font-normal text-center text-slate-400 bg-transparent rounded text-base">
-          <i className="fas fa-lock"></i>
-        </span>
-        <input
-          type="text"
-          placeholder="Zipcode"
-          className="px-3 py-3 placeholder-slate-400 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full "
-        />
+      <div className="mt-6 mb-10">
+        <Drop />
       </div>
-      <div className="w-4/5 mt-8">
+      <div className="flex flex-col justify-center items-center w-4/5 mt-8">
         <a
           href="#"
           class="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
@@ -41,15 +34,12 @@ const Card = () => {
             <p class="mb-3 font-normal text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
               laborum, vero aspernatur similique magnam quisquam nihil voluptas
-              temporibus a, illo dolorem at id ad culpa ut nisi placeat rem
-              hic.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-              laborum, vero aspernatur similique magnam quisquam nihil voluptas
               temporibus a, illo dolorem at id ad culpa ut nisi placeat rem hic.
             </p>
           </div>
         </a>
       </div>
-      <div className="w-4/5 mt-8">
+      <div className="flex flex-col justify-center items-center w-4/5 mt-8 mb-20">
         <a
           href="#"
           class="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"

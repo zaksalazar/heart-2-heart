@@ -10,6 +10,7 @@ import Team from "./components/Team";
 import Card from "./components/Card";
 import Helper from "./components/Helper";
 import NewPost from "./components/NewPost";
+import Drop from "./components/Drop";
 // import Dashboard from "./components/Dashboard";
 
 
@@ -67,6 +68,10 @@ function App() {
       // <div>{/* <Dashboard /> */}</div>
 =======
 
+      <div>
+        <Homepage />
+      </div>
+
       {/* New Family creating a post */}
       {/* <div>
         <NewPost />
@@ -77,9 +82,19 @@ function App() {
       </div> */}
 >>>>>>> bcc93a2 (added a bunch)
 
+<<<<<<< HEAD
       // <div>
       //   <Card />
       // </div>
+=======
+      {/* <div>
+        <Drop />
+      </div> */}
+
+      {/* <div>
+        <Card />
+      </div> */}
+>>>>>>> 1b3799a (added explainer to homepage)
 
 <<<<<<< HEAD
       // {/* <div className=" p-20 ">

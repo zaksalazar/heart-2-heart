@@ -7,14 +7,17 @@ import { Link } from "react-router-dom";
 import background from "/public/assets/images/familyPlaceholder.jpeg";
 =======
 import background from "/public/assets/images/fam1.jpg";
+<<<<<<< HEAD
 >>>>>>> 821da1d (pushing to start with mobile layout first)
+=======
+import Explainer from "./Explainer";
+>>>>>>> 1b3799a (added explainer to homepage)
 
 >>>>>>> 33d5713 (added homepage elements and changed signin button)
 function Homepage() {
   const [show, setShow] = useState(false);
   return (
     <div className="pb-12 overflow-y-hidden" style={{ minHeight: 700 }}>
-      {/* Code block starts */}
       <dh-component>
         <nav className="w-full border-b">
           <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
@@ -104,12 +107,11 @@ function Homepage() {
         >
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
-
-                People Helping People
+              <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black">
+                Heart 2 Heart
               </h1>
-              <h2 className="text-red-700 text-bold text-3xl">
-                Plain & Simple
+              <h2 className="text-red-700 text-bold text-2xl text-center">
+                People Helping People
               </h2>
               <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-800 font-normal text-center text-sm sm:text-lg">
                 Heart 2 Heart is a community driven way for people to help
@@ -127,7 +129,9 @@ function Homepage() {
           </div>
         </div>
       </dh-component>
-      {/* Code block ends */}
+      <div>
+        <Explainer />
+      </div>
     </div>
   );
 }
