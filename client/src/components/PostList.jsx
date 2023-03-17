@@ -18,6 +18,13 @@ const mockCards = [
     buttonText1: "Clothing",
     buttonText2: "School Supplies",
   },
+  {
+    id: "card-3",
+    name: "Salizar Family",
+    bio: "We love nature",
+    buttonText1: "Clothing",
+    buttonText2: "School Supplies",
+  },
 ];
 
 const ViewPosts = () => {

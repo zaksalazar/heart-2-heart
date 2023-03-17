@@ -5,7 +5,29 @@ const Card = ({ cardData = {} }) => {
   const { name = "", bio = "" } = cardData;
   return (
     <div>
-      <div className="flex flex-col justify-center items-center w-4/5 mt-8">
+      <div>
+        <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+          <a href="#" class="block w-full h-full">
+            <img
+              alt="blog photo"
+              src="/images/blog/1.jpg"
+              class="object-cover w-full max-h-40"
+            />
+            <div class="w-full p-4 bg-white dark:bg-gray-800">
+              <p class="font-medium text-indigo-500 text-md">Article</p>
+              <p class="mb-2 text-xl font-medium text-gray-800 dark:text-white">
+                Supercharged
+              </p>
+              <p class="font-light text-gray-400 dark:text-gray-300 text-md">
+                The new supercar is here, 543 cv and 140 000$. This is best
+                racing GT about 7 years on...
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center w-4/5 mt-8 max-h-56">
         <a
           href="#"
           className="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
@@ -20,6 +42,90 @@ const Card = ({ cardData = {} }) => {
               {name}
             </h5>
             <p className="mb-3 font-normal text-gray-600">{bio}</p>
+          </div>
+          <div>
+            <ul class="w-4/5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+              <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input
+                    id="vue-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="vue-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Clothing
+                  </label>
+                </div>
+              </li>
+              <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input
+                    id="react-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="react-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    School Supplies
+                  </label>
+                </div>
+              </li>
+              <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input
+                    id="angular-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="angular-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Baby Goods
+                  </label>
+                </div>
+              </li>
+              <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input
+                    id="laravel-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="laravel-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Blankets
+                  </label>
+                </div>
+              </li>
+              <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                <div class="flex items-center pl-3">
+                  <input
+                    id="vue-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="vue-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Canned Food
+                  </label>
+                </div>
+              </li>
+            </ul>
           </div>
         </a>
       </div>
