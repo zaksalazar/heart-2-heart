@@ -1,6 +1,7 @@
 //  User sets up a profile to request or contribute
 import React from "react";
 
+
 const Signup = () => {
   return (
     <div className="flex justify-center pt-10 pb-10 bg-gray-200">

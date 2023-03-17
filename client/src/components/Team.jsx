@@ -2,12 +2,12 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800" id="team">
+    <div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
       <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
         Professional team
       </p>
       <p class="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-200">
-        Meat the best team in world
+        Meet the best team in world
       </p>
       <div class="flex flex-col items-center md:flex-row justify-center">
         <div class="p-4">
@@ -28,31 +28,7 @@ const Team = () => {
               Canaan blurb for a couple rows of text
             </p>
           </div>
-          <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-              </svg>
-            </a>
+          <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,31 +74,7 @@ const Team = () => {
               Zak blurb for a couple rows of text
             </p>
           </div>
-          <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-              </svg>
-            </a>
+          <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,31 +120,7 @@ const Team = () => {
               Rudy blurb for a couple rows of text
             </p>
           </div>
-          <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-              </svg>
-            </a>
+          <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -239,19 +167,7 @@ const Team = () => {
               John blurb for a couple rows of text
             </p>
           </div>
-          <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            {/* <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-              </svg>
-            </a> */}
+          <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -299,31 +215,7 @@ const Team = () => {
               Dillon blurb for a couple rows of text
             </p>
           </div>
-          <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                viewBox="0 0 1792 1792"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-              </svg>
-            </a>
+          <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
