@@ -1,14 +1,15 @@
 // First page rendered to user when they come to site
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import background from "/public/assets/images/familyPlaceholder.jpeg";
+import Explainer from "./Explainer";
+import Team from "./Team";
+import Navbar from "./Navbar";
+
 function Homepage() {
   const [show, setShow] = useState(false);
   return (
-    <div
-      className="bg-gray-200 pb-12 overflow-y-hidden"
-      style={{ minHeight: 700 }}
-    >
-      {/* Code block starts */}
+    <div className="pb-12 overflow-y-hidden" style={{ minHeight: 700 }}>
       <dh-component>
         <nav className="w-full border-b">
           <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
@@ -83,22 +84,29 @@ function Homepage() {
                 </ul>
               </div>
             </div>
-            <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-red-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-red-700 text-red-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
+            {/* <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-red-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-red-700 text-red-700 px-4 sm:px-8 py-1 sm:py-3 text-sm"> */}
+            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
               Sign In
             </button>
           </div>
         </nav>
-        <div className="bg-gray-300">
+        <div
+          className="bg-gray-400 bg-blend-soft-light bg-center"
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
           <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
-
                 People Helping People
               </h1>
-              <h2 className="text-red-700 text-bold text-2xl">
+              <h2 className="text-red-700 text-bold text-3xl">
                 Plain & Simple
               </h2>
-              <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
+              <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-800 font-normal text-center text-sm sm:text-lg">
                 Heart 2 Heart is a community driven way for people to help
                 people{" "}
               </p>
@@ -114,9 +122,9 @@ function Homepage() {
           </div>
         </div>
       </dh-component>
-      {/* Code block ends */}
+      <Explainer />
+      <Team />
     </div>
   );
 }
-
 export default Homepage;
