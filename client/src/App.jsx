@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./index.css";
-import Navbar from "./components/Navbar";
-import Signup from "./components/Signup";
+// import Signup from "./components/Signup";
+import Login from "./components/Login";
 import Homepage from "./components/homepage";
 import Explainer from "./components/Explainer";
 import Team from "./components/Team";
 import Card from "./components/Card";
+import Faq from "./components/Faq";
+import Signup from "./components/signup";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -23,9 +25,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div>
-        <Navbar />
-      </div> */}
       <div>
         <Homepage />
       </div>
@@ -51,6 +50,15 @@ function App() {
       <div className="pt-10">
         <Team />
       </div>
+    <div>
+      <Login />
+    </div>
+    <div>
+      <Faq />
+    </div>
+    <div>
+      <Signup/>
+    </div>
     </div>
   );
 }
