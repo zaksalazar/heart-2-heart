@@ -8,6 +8,7 @@ import CreatePost from "./components/CreatePost";
 import Post from "./components/PostList";
 import PostsList from "./components/PostList";
 import Navbar from "./components/Navbar";
+import Login from "./components/Login";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -24,7 +25,6 @@ function App() {
   // ];
 
   return (
-
     <Router>
       <nav>
         <ul>
@@ -39,7 +39,7 @@ function App() {
             </Link>
           </li>
           <li>
-            <Link to="/login">
+            <Link to="/Login">
               <span> Login </span>
             </Link>
           </li>
@@ -63,58 +63,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/create-post" element={<CreatePost />} />
         <Route path="/posts" element={<PostsList />} />
         <Route path="/posts/:postId" element={<Post />} />
       </Routes>
     </Router>
-
-    <div className="App">
-      {/* <div>
-        <Navbar />
-      </div> */}
-  <Router> 
-    <Routes>
-      <Route
-        path = "/"
-        element= {<Homepage/>}
-      />
-      <Route 
-        path = "/signup"
-        element = {<Signup/>}
-      />
-      <Route 
-        path = "/post"
-        element = {<Card/>}
-      />
-      <Route 
-        path="/post/:postId" 
-        element={<Card />}
-      />
-      <Route 
-        path="/aboutus"
-        element={<Team />}
-      />
-    </Routes>
-  </Router>
-      
- 
-
-      // {/* <div className=" p-20 ">
-      //   {cards.map((card) => {
-      //     return (
-      //       <div key={card.id}>
-      //         <Card data={card} />
-      //       </div>
-      //     );
-      //   })}
-      // </div> */}
-
-    {/* //   <div className="pt-10">
-    //     <Team />
-    //   </div> */}
-    </div>
-
   );
 }
 
