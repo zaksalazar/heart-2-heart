@@ -12,92 +12,94 @@ const NewPost = () => {
         <Drop />
       </div>
       {/* CheckBoxes */}
-      <div>
+      <div className=" justify-center items-center">
         <h3 className="mt-4 mb-4 font-semibold text-gray-900 dark:text-white">
           What items do you need?
         </h3>
-        <ul class="w-4/5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-            <div class="flex items-center pl-3">
-              <input
-                id="vue-checkbox"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-              />
-              <label
-                for="vue-checkbox"
-                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Clothing
-              </label>
-            </div>
-          </li>
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-            <div class="flex items-center pl-3">
-              <input
-                id="react-checkbox"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-              />
-              <label
-                for="react-checkbox"
-                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                School Supplies
-              </label>
-            </div>
-          </li>
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-            <div class="flex items-center pl-3">
-              <input
-                id="angular-checkbox"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-              />
-              <label
-                for="angular-checkbox"
-                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Baby Goods
-              </label>
-            </div>
-          </li>
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-            <div class="flex items-center pl-3">
-              <input
-                id="laravel-checkbox"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-              />
-              <label
-                for="laravel-checkbox"
-                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Blankets
-              </label>
-            </div>
-          </li>
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-            <div class="flex items-center pl-3">
-              <input
-                id="vue-checkbox"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-              />
-              <label
-                for="vue-checkbox"
-                class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Canned Food
-              </label>
-            </div>
-          </li>
-        </ul>
+        <div className="w-4/5">
+          <ul class="w-4/5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg">
+            <li class="w-full border-b border-gray-200 rounded-t-lg">
+              <div class="flex items-center pl-3">
+                <input
+                  id="vue-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <label
+                  for="vue-checkbox"
+                  class="w-full py-3 ml-2 text-sm font-medium text-gray-900"
+                >
+                  Clothing
+                </label>
+              </div>
+            </li>
+            <li class="w-full border-b border-gray-200 rounded-t-lg">
+              <div class="flex items-center pl-3">
+                <input
+                  id="react-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <label
+                  for="react-checkbox"
+                  class="w-full py-3 ml-2 text-sm font-medium text-gray-900"
+                >
+                  School Supplies
+                </label>
+              </div>
+            </li>
+            <li class="w-full border-b border-gray-200 rounded-t-lg ">
+              <div class="flex items-center pl-3">
+                <input
+                  id="angular-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <label
+                  for="angular-checkbox"
+                  class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Baby Goods
+                </label>
+              </div>
+            </li>
+            <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+              <div class="flex items-center pl-3">
+                <input
+                  id="laravel-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <label
+                  for="laravel-checkbox"
+                  class="w-full py-3 ml-2 text-sm font-medium text-gray-900"
+                >
+                  Blankets
+                </label>
+              </div>
+            </li>
+            <li class="w-full border-b border-gray-200 rounded-t-lg">
+              <div class="flex items-center pl-3">
+                <input
+                  id="vue-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                />
+                <label
+                  for="vue-checkbox"
+                  class="w-full py-3 ml-2 text-sm font-medium text-gray-900"
+                >
+                  Canned Food
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       {/* Family Post Story */}
       <div class="mt-6 mb-6 w-4/5">
@@ -110,7 +112,7 @@ const NewPost = () => {
         <input
           type="text"
           id="large-input"
-          class="block w-full p-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"
+          class="truncate block w-full p-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
       <div>
