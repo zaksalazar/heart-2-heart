@@ -9,25 +9,24 @@ const Card = ({ cardData = {} }) => {
         <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
           <a href="#" class="block w-full h-full">
             <img
-              alt="blog photo"
-              src="/images/blog/1.jpg"
+              alt="card photo"
+              src="assets/images/fam1.jpg"
               class="object-cover w-full max-h-40"
             />
             <div class="w-full p-4 bg-white dark:bg-gray-800">
-              <p class="font-medium text-indigo-500 text-md">Article</p>
+              <p class="font-medium text-indigo-500 text-md">County</p>
               <p class="mb-2 text-xl font-medium text-gray-800 dark:text-white">
-                Supercharged
+                {name}
               </p>
               <p class="font-light text-gray-400 dark:text-gray-300 text-md">
-                The new supercar is here, 543 cv and 140 000$. This is best
-                racing GT about 7 years on...
+                {bio}
               </p>
             </div>
           </a>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-4/5 mt-8 max-h-56">
+      {/* <div className="flex flex-col justify-center items-center w-4/5 mt-8 max-h-56">
         <a
           href="#"
           className="flex flex-col items-center bg-gray-100  border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
@@ -128,7 +127,7 @@ const Card = ({ cardData = {} }) => {
             </ul>
           </div>
         </a>
-      </div>
+      </div> */}
 
       {/* <div className="flex flex-col w-2/3 gap-5 p-2 mx-auto bg-white shadow-xl select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
         <div
