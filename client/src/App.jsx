@@ -24,7 +24,6 @@ function App() {
   // ];
 
   return (
-
     <Router>
       <nav>
         <ul>
@@ -68,53 +67,6 @@ function App() {
         <Route path="/posts/:postId" element={<Post />} />
       </Routes>
     </Router>
-
-    <div className="App">
-      {/* <div>
-        <Navbar />
-      </div> */}
-  <Router> 
-    <Routes>
-      <Route
-        path = "/"
-        element= {<Homepage/>}
-      />
-      <Route 
-        path = "/signup"
-        element = {<Signup/>}
-      />
-      <Route 
-        path = "/post"
-        element = {<Card/>}
-      />
-      <Route 
-        path="/post/:postId" 
-        element={<Card />}
-      />
-      <Route 
-        path="/aboutus"
-        element={<Team />}
-      />
-    </Routes>
-  </Router>
-      
- 
-
-      // {/* <div className=" p-20 ">
-      //   {cards.map((card) => {
-      //     return (
-      //       <div key={card.id}>
-      //         <Card data={card} />
-      //       </div>
-      //     );
-      //   })}
-      // </div> */}
-
-    {/* //   <div className="pt-10">
-    //     <Team />
-    //   </div> */}
-    </div>
-
   );
 }
 
