@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import background from "/public/assets/images/familyPlaceholder.jpeg";
 import Explainer from "./Explainer";
 import Team from "./Team";
-import Navbar from "./Navbar";
 
 function Homepage() {
   const [show, setShow] = useState(false);
@@ -122,7 +121,9 @@ function Homepage() {
           </div>
         </div>
       </dh-component>
-      <Explainer />
+      <div className="mt-5">
+        <Explainer />
+      </div>
       <Team />
     </div>
   );
