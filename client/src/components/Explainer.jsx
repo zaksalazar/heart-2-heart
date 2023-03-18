@@ -15,12 +15,12 @@ function Explainer() {
               >
                 ________________________________________________________________
               </p>
-              <hh1
+              <h1
                 tabIndex={0}
                 className="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4"
               >
                 How it all works...
-              </hh1>
+              </h1>
             </div>
             <div
               tabIndex={0}
