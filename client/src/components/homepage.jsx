@@ -102,7 +102,7 @@ function Homepage() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
                 People Helping People
               </h1>
-              <h2 className="text-red-700 text-bold text-3xl">
+              <h2 className="text-red-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center">
                 Plain & Simple
               </h2>
               <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-800 font-normal text-center text-sm sm:text-lg">

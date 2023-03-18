@@ -8,6 +8,7 @@ import CreatePost from "./components/CreatePost";
 import Post from "./components/PostList";
 import PostsList from "./components/PostList";
 import Login from "./components/Login";
+import SendDonation from "./components/SendDonation";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -57,6 +58,11 @@ function App() {
               <span>Post Page </span>
             </Link>
           </li>
+          <li>
+            <Link to="/send">
+              <span>Send Donation</span>
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -66,6 +72,7 @@ function App() {
         <Route path="/create-post" element={<CreatePost />} />
         <Route path="/posts" element={<PostsList />} />
         <Route path="/posts/:postId" element={<Post />} />
+        <Route path="/send" element={<SendDonation />} />
       </Routes>
     </Router>
   );
