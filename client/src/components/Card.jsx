@@ -11,7 +11,7 @@ const Card = ({ cardData = {} }) => {
           <a href="#" class="block w-full h-full">
             <img
               alt="card photo"
-              src="assets/images/fam1.jpg"
+              src="/assets/images/fam1.jpg"
               class="object-cover w-full max-h-40"
             />
             <div class="w-full p-4 bg-white dark:bg-gray-800">
