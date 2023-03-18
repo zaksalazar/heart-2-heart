@@ -34,7 +34,7 @@ const Card = ({ cardData = {} }) => {
         >
           <img
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-            src="assets/images/fam1.jpg"
+            src="/assets/images/fam1.jpg"
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
