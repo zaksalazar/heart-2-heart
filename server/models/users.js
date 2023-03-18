@@ -28,6 +28,9 @@ const userSchema = new Schema(
       type: String,
       required: true,
       match: [/^[A-Za-z]\w{7,14}$/, "password between 7 to 16 characters which contain only characters, numeric digits, underscore and first character must be a letter"]
+    },
+    userImage: {
+      type: String
     }
   },
   {
