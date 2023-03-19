@@ -14,14 +14,10 @@ const Card = ({ cardData = {} }) => {
               src="/assets/images/fam1.jpg"
               class="object-cover w-full max-h-40"
             />
-            <div class="w-full p-4 bg-white dark:bg-gray-800">
+            <div class="w-full p-4 bg-white ">
               <p class="font-medium text-indigo-500 text-md">{county}</p>
-              <p class="mb-2 text-xl font-medium text-gray-800 dark:text-white">
-                {name}
-              </p>
-              <p class="font-light text-gray-400 dark:text-gray-300 text-md">
-                {bio}
-              </p>
+              <p class="mb-2 text-xl font-medium text-gray-800">{name}</p>
+              <p class="font-light text-gray-400 text-md">{bio}</p>
             </div>
           </a>
         </div>

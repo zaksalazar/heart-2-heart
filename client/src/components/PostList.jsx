@@ -5,21 +5,21 @@ import Card from "./Card";
 
 const mockCards = [
   {
-    id: "card-1",
+    id: "123",
     name: "Owens Family",
     bio: "we Lost our jobs and we need help",
     county: "Los Angeles",
     buttonText2: "School Supplies",
   },
   {
-    id: "card-2",
+    id: "456",
     name: "Duff Family",
     bio: "We're dope AF",
     county: "Los Angeles",
     buttonText2: "School Supplies",
   },
   {
-    id: "card-3",
+    id: "789",
     name: "Salizar Family",
     bio: "We love nature",
     county: "Orange",

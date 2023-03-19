@@ -13,7 +13,7 @@ const NewPost = () => {
       </div>
       {/* CheckBoxes */}
       <div className=" justify-center items-center">
-        <h3 className="mt-4 mb-4 font-semibold text-gray-900 dark:text-white">
+        <h3 className="mt-4 mb-4 font-semibold text-gray-900">
           What items do you need?
         </h3>
         <div className="w-4/5">
@@ -103,10 +103,7 @@ const NewPost = () => {
       </div>
       {/* Family Post Story */}
       <div class="mt-6 mb-6 w-4/5">
-        <label
-          for="large-input"
-          class="mb-4 font-semibold text-gray-900 dark:text-white"
-        >
+        <label for="large-input" class="mb-4 font-semibold text-gray-900">
           Post Bio:
         </label>
         <input
