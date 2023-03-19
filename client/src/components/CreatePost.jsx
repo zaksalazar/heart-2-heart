@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Drop from "./Drop";
 
 const NewPost = () => {
+  const [supplyData, setSupplyData] = useState({
+    recipientId: "64125db501ab3c09a30c798a",
+    title: "Test",
+    description: "Test description",
+    tags: [],
+    county: "Orange",
+    supplyImage: null,
+  });
+
+  const createSupply = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:3001/api/supplies/upload",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(supplyData),
+        }
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="flex flex-col justify-center items-center ">
       <div className="flex flex-col justify-center items-center">
@@ -113,7 +141,10 @@ const NewPost = () => {
         />
       </div>
       <div>
-        <button className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
+        <button
+          onClick={createSupply}
+          className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm"
+        >
           Create Post
         </button>
       </div>

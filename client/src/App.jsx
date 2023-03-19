@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Signup from "./components/Signup";
 import Homepage from "./components/Homepage";
 import CreatePost from "./components/CreatePost";
-import Post from "./components/PostList";
+import Post from "./components/Post";
 import PostsList from "./components/PostList";
 import Login from "./components/Login";
 import SendDonation from "./components/SendDonation";
