@@ -16,7 +16,7 @@ const SendDonation = () => {
           </p>
           <div className="flex items-center mt-4">
             <div className="flex flex-col justify-between ml-2">
-              <span className="text-sm font-semibold text-red-700">
+              <span className="text-sm text-red-700 italic font-bold">
                 HELEN KELLER
               </span>
             </div>

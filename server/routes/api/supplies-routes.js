@@ -35,7 +35,7 @@ const s3 = new Aws.S3({
 
 // handle post request and upload photo (upload photo using key defined below in upload.single id: supplyImage)
 router.post("/upload", upload.single("supplyImage"), async (req, res) => {
-//   console.log(req.file); // check data in console that is being uploaded
+  console.log(req.file); // check data in console that is being uploaded
   let s3ImgLocation;
   try {
     if (req.file) {
@@ -52,7 +52,7 @@ router.post("/upload", upload.single("supplyImage"), async (req, res) => {
 
       // if not then below code will be executed
 
-    //   console.log(data); // will give information about object in which photo is stored
+      console.log(data); // will give information about object in which photo is stored
       s3ImgLocation = data.Location;
     }
     // save info in database
@@ -62,7 +62,7 @@ router.post("/upload", upload.single("supplyImage"), async (req, res) => {
       description: req.body.description,
       tags: req.body.tags,
       county: req.body.county,
-      supplyImage: s3ImgLocation
+      supplyImage: s3ImgLocation,
     });
     res.status(200).json(supply);
   } catch (err) {
@@ -70,6 +70,18 @@ router.post("/upload", upload.single("supplyImage"), async (req, res) => {
     res.send(err);
   }
 });
+
+// router.post("/create-supply", async (req, res) => {
+//   const supply = await Supply.create({
+//     recipientId: req.body.recipientId,
+//     title: req.body.title,
+//     description: req.body.description,
+//     tags: req.body.tags,
+//     county: req.body.county,
+//     supplyImage: s3ImgLocation,
+//   });
+//   res.status(200).json(supply);
+// });
 
 // Route that creates a new supply
 // POST http://localhost:3001/api/supplies/

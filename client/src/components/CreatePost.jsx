@@ -1,7 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import Drop from "./Drop";
 
 const NewPost = () => {
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [supplyData, setSupplyData] = useState({
+    recipientId: "64125db501ab3c09a30c798a",
+    title: "Test",
+    description: "Test description",
+    tags: [],
+    county: "Orange",
+    supplyImage: null,
+  });
+
+  const handleTagChange = (event) => {
+    const tagName = event.target.name;
+    const isChecked = event.target.checked;
+    if (isChecked) {
+      setSelectedTags([...selectedTags, tagName]);
+    } else {
+      setSelectedTags(selectedTags.filter((tag) => tag !== tagName));
+    }
+
+    setSelectedTags((newSelectedTags) => {
+      setSupplyData({ ...supplyData, tags: newSelectedTags });
+      return newSelectedTags;
+    });
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setSupplyData({ ...supplyData, [name]: value });
+  };
+
+  const createSupply = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:3001/api/supplies/upload",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(supplyData),
+        }
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="flex flex-col justify-center items-center ">
       <div className="flex flex-col justify-center items-center">
@@ -9,11 +58,37 @@ const NewPost = () => {
       </div>
       {/* Location entry */}
       <div className="flex flex-col w-4/5 mb-3 mt-5">
-        <Drop />
+        <div class="mt-6 mb-6 w-4/5">
+          <label for="large-input" class="mb-4 font-semibold text-gray-900">
+            Post Name:
+          </label>
+          <input
+            id="large-input"
+            class="truncate block w-full p-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"
+            name="title"
+            onChange={(e) => handleInputChange(e)}
+          />
+        </div>
+        <div className="flex flex-col mb-2">
+          <div className=" relative ">
+            <select
+              class="block px-3 py-2 text-gray-700 bg-white border border-gray-500 w-full rounded-md shadow-smc focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+              name="county"
+              onChange={(event) =>
+                setSupplyData({ ...supplyData, county: event.target.value })
+              }
+            >
+              <option value="">Select A Location</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Orange">Orange County</option>
+              <option value="Riverside">Riverside</option>
+            </select>
+          </div>
+        </div>
       </div>
       {/* CheckBoxes */}
       <div className=" justify-center items-center">
-        <h3 className="mt-4 mb-4 font-semibold text-gray-900 dark:text-white">
+        <h3 className="mt-4 mb-4 font-semibold text-gray-900">
           What items do you need?
         </h3>
         <div className="w-4/5">
@@ -23,8 +98,9 @@ const NewPost = () => {
                 <input
                   id="vue-checkbox"
                   type="checkbox"
-                  value=""
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                  name="Clothing"
+                  onChange={handleTagChange}
                 />
                 <label
                   for="vue-checkbox"
@@ -39,7 +115,8 @@ const NewPost = () => {
                 <input
                   id="react-checkbox"
                   type="checkbox"
-                  value=""
+                  name="School Supplies"
+                  onChange={handleTagChange}
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                 />
                 <label
@@ -55,7 +132,8 @@ const NewPost = () => {
                 <input
                   id="angular-checkbox"
                   type="checkbox"
-                  value=""
+                  name="Baby Goods"
+                  onChange={handleTagChange}
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                 />
                 <label
@@ -71,7 +149,8 @@ const NewPost = () => {
                 <input
                   id="laravel-checkbox"
                   type="checkbox"
-                  value=""
+                  name="Blankets"
+                  onChange={handleTagChange}
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                 />
                 <label
@@ -87,7 +166,8 @@ const NewPost = () => {
                 <input
                   id="vue-checkbox"
                   type="checkbox"
-                  value=""
+                  name="Canned Food"
+                  onChange={handleTagChange}
                   class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                 />
                 <label
@@ -103,20 +183,22 @@ const NewPost = () => {
       </div>
       {/* Family Post Story */}
       <div class="mt-6 mb-6 w-4/5">
-        <label
-          for="large-input"
-          class="mb-4 font-semibold text-gray-900 dark:text-white"
-        >
+        <label for="large-input" class="mb-4 font-semibold text-gray-900">
           Post Bio:
         </label>
         <input
           type="text"
           id="large-input"
           class="truncate block w-full p-6 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500"
+          name="description"
+          onChange={(e) => handleInputChange(e)}
         />
       </div>
       <div>
-        <button className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
+        <button
+          onClick={createSupply}
+          className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm"
+        >
           Create Post
         </button>
       </div>

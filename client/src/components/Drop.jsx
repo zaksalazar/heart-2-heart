@@ -2,7 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-export default function Drop() {
+export default function Dropdown({ onChange }) {
   return (
     <div className="flex flex-col items-center">
       <Menu as="div" className="relative inline-block text-left">
