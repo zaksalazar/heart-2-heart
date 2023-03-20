@@ -3,8 +3,8 @@ import React from "react";
 const SendDonation = () => {
   return (
     <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-      <div className="flex flex-col h-[600px] max-w-md px-4 py-8 bg-white rounded-lg shadow-xl  sm:px-6 md:px-8 lg:px-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black">
+      <div className="flex flex-col h-[600px] px-10 py-10 bg-white rounded-lg shadow-2xl border xl:h-[800px] xl:w-[600px]">
+        <h1 className="text-6xl text-center text-gray-800 font-black xl:mt-24">
           Thank you
         </h1>
         {/* Quote Card */}
