@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Drop from "./Drop";
-
+import Auth from "../utils/auth"
 const NewPost = () => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [supplyData, setSupplyData] = useState({
@@ -33,6 +33,7 @@ const NewPost = () => {
   };
 
   const createSupply = async () => {
+    const token = Auth.getToken();
     try {
       const response = await fetch(
         "http://localhost:3001/api/supplies/upload",
@@ -40,6 +41,7 @@ const NewPost = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "Authorization": token?`Bearer ${token}`: ""
           },
           body: JSON.stringify(supplyData),
         }

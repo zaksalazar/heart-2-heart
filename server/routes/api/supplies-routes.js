@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { Supply } = require("../../models");
-
+const withAuth = require("../../utils/customAuth");
 // dependencies needed for S3 storage of images
 const multer = require("multer");
 const Aws = require("aws-sdk");
@@ -34,7 +34,7 @@ const s3 = new Aws.S3({
 });
 
 // handle post request and upload photo (upload photo using key defined below in upload.single id: supplyImage)
-router.post("/upload", upload.single("supplyImage"), async (req, res) => {
+router.post("/upload", withAuth, upload.single("supplyImage"), async (req, res) => {
   console.log(req.file); // check data in console that is being uploaded
   let s3ImgLocation;
   try {

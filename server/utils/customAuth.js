@@ -1,6 +1,10 @@
+const jwt = require('jsonwebtoken');
+const secret = "thisisasecret";
+const expiration = '3h';
 
 const withAuth = (req, res, next) => {
   let token = req.body.token || req.query.token || req.headers.authorization;
+  console.log("im here")
   if (req.headers.authorization) {
       token = token.split(' ').pop().trim();
   }
@@ -18,3 +22,4 @@ if (token){
   }
 }
 }
+module.exports = withAuth

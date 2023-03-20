@@ -82,10 +82,11 @@ router.post('/create-user', upload.single("userImage"), async (req,res) => {
             password: req.body.password,
             userImage: s3ImgLocation
         });
-        res.status(200).json(user);
+        const token = signToken(user)
+        res.status(200).json({user, token});
     } catch (err) {
-        console.log(err);
-        res.send(err);
+        console.log(err); 
+        res.status(500).send(err);
     }
     // try {
     //     const user = await User.create({
