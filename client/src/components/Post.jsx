@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import Card from "./Card";
+import CardSingle from "./CardSingle";
 
 const Post = () => {
   const [post, setPost] = useState([]);
@@ -26,7 +26,7 @@ const Post = () => {
   return (
     <div>
       {loading && "loading..."}
-      <Card cardData={post} />
+      <CardSingle cardData={post} />
     </div>
   );
 };
