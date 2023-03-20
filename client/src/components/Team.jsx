@@ -27,7 +27,7 @@ const Team = () => {
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
+            <a href="https://github.com/canaano">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -56,7 +56,7 @@ const Team = () => {
         {/* Zak Profile Info */}
         <div class="p-4">
           <div class="mb-4 text-center opacity-90">
-            <a href="#" class="relative block">
+            <a href="https://github.com/zaksalazar" class="relative block">
               <img
                 src="/assets/images/Zak.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
@@ -100,7 +100,7 @@ const Team = () => {
         {/* Rudy Profile Info */}
         <div class="p-4">
           <div class="mb-4 text-center opacity-90">
-            <a href="#" class="relative block">
+            <a href="https://github.com/RudezY" class="relative block">
               <img
                 src="/assets/images/rudy.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
@@ -160,7 +160,7 @@ const Team = () => {
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
+            <a href="https://github.com/JYK33">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -206,7 +206,7 @@ const Team = () => {
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-            <a href="#">
+            <a href="https://github.com/dillonkim19">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
