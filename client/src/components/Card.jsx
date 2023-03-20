@@ -18,7 +18,10 @@ const Card = ({ cardData = {} }) => {
               <p className="font-medium text-indigo-500 text-md">{county}</p>
               <p className="mb-2 text-xl font-medium text-gray-800">{title}</p>
               <p className="font-light text-gray-400 text-md">{tags}</p>
-              <p className="font-light text-gray-400 text-md">{description}</p>
+              <span> </span>
+              <p className="font-light text-gray-400 text-md truncate">
+                {description}
+              </p>
             </div>
           </a>
         </div>
