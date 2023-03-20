@@ -1,6 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import { MdErrorOutline } from "react-icons/md";
+
+import Auth from '../utils/auth'
+
 
 const Signup = () => {
+  const [ userData, setUserData ] = useState({
+    username: 'a',
+    firstname: 'a',
+    lastname: 'a',
+    email: '123a@123.com',
+    password: 'asdf1234',
+  });
+  const handleUserChange = (event) => {
+    const {name, value} = event.target;
+    setUserData({...userData, [name]: value})
+  };
+
+const createUser = async () => {
+  try {
+    const response = await fetch(
+      "http://localhost:3001/api/users/create-user",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      }
+    );
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div>
@@ -28,6 +65,7 @@ const Signup = () => {
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                     name="username"
                     placeholder="Username"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
               </div>
@@ -37,8 +75,9 @@ const Signup = () => {
                     type="text"
                     id="firstName"
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                    name="First name"
+                    name="firstname"
                     placeholder="First name"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
                 <div className=" relative ">
@@ -46,8 +85,9 @@ const Signup = () => {
                     type="text"
                     id="lastName"
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                    name="Last name"
+                    name="lastname"
                     placeholder="Last name"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
               </div>
@@ -58,6 +98,7 @@ const Signup = () => {
                     id="email"
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                     placeholder="Email"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
               </div>
@@ -68,6 +109,7 @@ const Signup = () => {
                     id="phone"
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                     placeholder="Phone Number"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
               </div>
@@ -79,6 +121,7 @@ const Signup = () => {
                     id="password"
                     className=" rounded-lg flex-1 appearance-none border border-gray-500 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                     placeholder="*Password*"
+                    onChange={(e) => handleUserChange(e)}
                   />
                 </div>
               </div>
@@ -95,7 +138,7 @@ const Signup = () => {
               <div className="flex flex-col mb-2">
                 <div className=" relative ">
                   <select
-                    class="block px-3 py-2 text-gray-700 bg-white border border-gray-500 w-full rounded-md shadow-smc focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                    className="block px-3 py-2 text-gray-700 bg-white border border-gray-500 w-full rounded-md shadow-smc focus:outline-none focus:ring-primary-500 focus:border-primary-500"
                     name="cities"
                   >
                     <option value="">Select A Location</option>
@@ -108,7 +151,7 @@ const Signup = () => {
 
               <div className="flex w-full my-4">
                 <button
-                  type="submit"
+                  onClick={createUser}
                   className="py-2 px-4  bg-blue-600 hover:bg-red-700 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                 >
                   Sign Up
