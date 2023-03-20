@@ -147,7 +147,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt="profil"
-                src="/assets/images/JohnKang.png"
+                src="/assets/images/JohnKang.jpeg"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
