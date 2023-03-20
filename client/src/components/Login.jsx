@@ -2,7 +2,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center p-10 bg-slate-400">
       <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow  sm:px-6 md:px-8 lg:px-10">
         <div class="self-center mb-6 text-xl font-bold text-black sm:text-2xl">
           Login To Your Account!
@@ -73,9 +73,10 @@ const Login = () => {
         </div>
         <div class="flex items-center justify-center mt-6">
           <a
-            href="#"
+            to="#"
             target="_blank"
-            className="inline-flex items-center text-s font-thin text-center text-black hover:text-gray-700"
+            className="inline-flex items-center text-s font-thin
+            text-center text-black hover:text-gray-700"
           >
             <span className="ml-2">Create an account?</span>
           </a>

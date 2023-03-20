@@ -1,45 +1,42 @@
 import React, { useState } from "react";
 import { MdErrorOutline } from "react-icons/md";
 
-import Auth from '../utils/auth'
-
+import Auth from "../utils/auth";
 
 const Signup = () => {
-  const [ userData, setUserData ] = useState({
-    username: 'a',
-    firstname: 'a',
-    lastname: 'a',
-    email: '123a@123.com',
-    password: 'asdf1234',
+  const [userData, setUserData] = useState({
+    username: "a",
+    firstname: "a",
+    lastname: "a",
+    email: "123a@123.com",
+    password: "asdf1234",
   });
   const handleUserChange = (event) => {
-    const {name, value} = event.target;
-    setUserData({...userData, [name]: value})
+    const { name, value } = event.target;
+    setUserData({ ...userData, [name]: value });
   };
 
-const createUser = async () => {
-  try {
-    const response = await fetch(
-      "http://localhost:3001/api/users/create-user",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      }
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-
+  const createUser = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:3001/api/users/create-user",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        }
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center p-10 bg-slate-400">
       <div>
         <div className="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
           <div className="self-center mb-2 text-xl font-bold text-black sm:text-2xl ">
@@ -47,13 +44,9 @@ const createUser = async () => {
           </div>
           <span className="justify-center text-sm text-center text-black flex-items-center">
             Already have an account?
-            <a
-              href="#"
-              target="_blank"
-              className="text-sm text-blue-500 underline hover:text-blue-700"
-            >
+            <span className="pl-3 text-sm text-blue-500 underline hover:text-blue-700">
               Sign in
-            </a>
+            </span>
           </span>
           <div className="p-6 mt-8">
             <form action="#">

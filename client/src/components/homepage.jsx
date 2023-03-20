@@ -69,9 +69,6 @@ function Homepage() {
                   </svg>
                 </button>
                 <ul className="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
-                  <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
-                    <a href="#profile">SUPER</a>
-                  </li>
                   <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                     <a href="/aboutus">Team</a>
                     {/* <Link to='/aboutus'>About Us</Link> */}
@@ -117,12 +114,16 @@ function Homepage() {
               </p>
             </div>
             <div className="flex justify-center items-center mt-4">
-              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
-                Need Help?
-              </button>
-              <button className="ml-4 focus:outline-none bg-white focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-transparent transition duration-150 ease-in-out hover:border-red-600 lg:text-xl lg:font-bold  hover:text-red-600 rounded border border-red-700 text-red-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">
-                Help a Family
-              </button>
+              <Link to={`/signup`}>
+                <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
+                  Need Help?
+                </button>
+              </Link>
+              <Link to={`/posts`}>
+                <button className="ml-4 focus:outline-none bg-white focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-transparent transition duration-150 ease-in-out hover:border-red-600 lg:text-xl lg:font-bold  hover:text-red-600 rounded border border-red-700 text-red-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">
+                  Help a Family
+                </button>
+              </Link>
             </div>
           </div>
         </div>

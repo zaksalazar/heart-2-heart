@@ -10,6 +10,7 @@ import PostsList from "./components/PostList";
 import Login from "./components/Login";
 import SendDonation from "./components/SendDonation";
 import Team from "./components/Team";
+import Navbar from "./components/Navbar";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <Router>
-      <nav className="sticky">
+      <nav className="sticky border-b-2">
         <ul>
           <li>
             <Link to="/">
@@ -69,6 +70,11 @@ function App() {
               <span>About Us</span>
             </Link>
           </li>
+          <li>
+            <Link to="/navbar">
+              <span>Navbar Testing</span>
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -80,6 +86,7 @@ function App() {
         <Route path="/posts/:postId" element={<Post />} />
         <Route path="/send" element={<SendDonation />} />
         <Route path="/about-us" element={<Team />} />
+        <Route path="/navbar" element={<Navbar />} />
       </Routes>
     </Router>
   );
