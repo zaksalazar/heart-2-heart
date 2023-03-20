@@ -4,7 +4,7 @@ const Team = () => {
   return (
     <div class="p-8 bg-white rounded-lg shadow ">
       <p class="text-3xl font-bold text-center text-gray-800 ">
-        Professional team
+        Professional Team
       </p>
       <p class="mb-12 text-xl font-normal text-center text-gray-500 ">
       Recently, one of our team members had an encounter with a homeless mother and her two year old daughter. After exhausting every resource over two days to try and find her assistance, he realized the system is broken. Ultimately he called upon the aid of friends and family, to help the mother out and get her out of the rain and freezing temperatures. From this, Heart-2-Heart was born. 
@@ -147,7 +147,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt="profil"
-                src="/assets/images/John.png"
+                src="/assets/images/JohnKang.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>

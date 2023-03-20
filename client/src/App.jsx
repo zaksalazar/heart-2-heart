@@ -9,6 +9,7 @@ import Post from "./components/Post";
 import PostsList from "./components/PostList";
 import Login from "./components/Login";
 import SendDonation from "./components/SendDonation";
+import Team from "./components/Team";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -63,6 +64,11 @@ function App() {
               <span>Send Donation</span>
             </Link>
           </li>
+          <li>
+            <Link to="/about-us">
+              <span>About Us</span>
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -73,6 +79,7 @@ function App() {
         <Route path="/posts" element={<PostsList />} />
         <Route path="/posts/:postId" element={<Post />} />
         <Route path="/send" element={<SendDonation />} />
+        <Route path="/about-us" element={<Team />} />
       </Routes>
     </Router>
   );

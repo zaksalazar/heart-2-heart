@@ -124,7 +124,6 @@ function Homepage() {
       <div className="mt-5">
         <Explainer />
       </div>
-      <Team />
     </div>
   );
 }
