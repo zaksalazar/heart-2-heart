@@ -7,7 +7,7 @@ const Team = () => {
         Professional team
       </p>
       <p class="mb-12 text-xl font-normal text-center text-gray-500 ">
-      Recently, one of our group members had an encounter with a homeless mother and her two year old daughter. After exhausting every resource over two days to try and find her assistance, he realized the system is broken. Ultimately he called upon the aid of friends and family, to help the mother out and get her out of the rain and freezing temperatures. From this, Heart-2-Heart was born. 
+      Recently, one of our team members had an encounter with a homeless mother and her two year old daughter. After exhausting every resource over two days to try and find her assistance, he realized the system is broken. Ultimately he called upon the aid of friends and family, to help the mother out and get her out of the rain and freezing temperatures. From this, Heart-2-Heart was born. 
       </p>
       <div class="flex flex-col items-center md:flex-row justify-center">
         <div class="p-4">
@@ -23,7 +23,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 ">Canaan</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              Canaan blurb for a couple rows of text
+              World Renowned Drone Pilot 
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -67,7 +67,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Zak</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md">
-              Zak blurb for a couple rows of text
+              Park Ranger Extraordinaire 
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -111,7 +111,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Rudy</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              Rudy blurb for a couple rows of text
+              Michialin Awared Sushi Chef
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -156,7 +156,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">John</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              John blurb for a couple rows of text
+              John 
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -202,7 +202,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Dillon</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              Dillon blurb for a couple rows of text
+            Bachelors of Engineering
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
