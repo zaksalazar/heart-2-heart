@@ -7,7 +7,7 @@ const Team = () => {
         Professional team
       </p>
       <p class="mb-12 text-xl font-normal text-center text-gray-500 ">
-        Meet the best team in world
+      Recently, one of our group members had an encounter with a homeless mother and her two year old daughter. After exhausting every resource over two days to try and find her assistance, he realized the system is broken. Ultimately he called upon the aid of friends and family, to help the mother out and get her out of the rain and freezing temperatures. From this, Heart-2-Heart was born. 
       </p>
       <div class="flex flex-col items-center md:flex-row justify-center">
         <div class="p-4">
