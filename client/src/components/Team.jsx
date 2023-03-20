@@ -111,7 +111,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Rudy</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              Michialin Awared Sushi Chef
+              Michelin Awarded Sushi Chef
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
