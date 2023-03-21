@@ -30,7 +30,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <nav className="sticky border-b-2">
+      {/* <nav className="sticky border-b-2">
         <ul>
           <li>
             <Link to="/">
@@ -78,7 +78,7 @@ function App() {
             </Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/signup" element={<Signup />} />
