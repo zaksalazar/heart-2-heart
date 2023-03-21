@@ -30,55 +30,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <nav className="sticky border-b-2">
-        <ul>
-          <li>
-            <Link to="/">
-              <span> Home </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/signup">
-              <span> Sign up </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Login">
-              <span> Login </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/create-post">
-              <span> Create Post </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/posts">
-              <span>Post List </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/posts/123">
-              <span>Post Page </span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/send">
-              <span>Send Donation</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/about-us">
-              <span>About Us</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/faq">
-              <span>Faq</span>
-            </Link>
-          </li>
-        </ul>
-      </nav>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/signup" element={<Signup />} />
