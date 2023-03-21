@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Auth from "../utils/auth";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
@@ -117,14 +118,14 @@ const Login = () => {
             </form>
           </div>
           <div class="flex items-center justify-center mt-6">
-            <a
-              to="#"
-              target="_blank"
+            <div
               className="inline-flex items-center text-s font-thin
-            text-center text-black hover:text-gray-700"
+            text-center text-black hover:text-gray-700>"
             >
-              <span className="ml-2">Create an account?</span>
-            </a>
+              <Link to="/Signup">
+                <span className="ml-2">Create an account?</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

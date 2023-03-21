@@ -31,7 +31,7 @@ const ViewPosts = () => {
           <div className="mt" role="img">
             <img
               className="max-w-[200px] md:w-auto mt-10"
-              src="/assets/images/logo1.png"
+              src="https://h-2-h.s3.us-west-2.amazonaws.com/logo1.png"
               alt="logo"
             />
           </div>
