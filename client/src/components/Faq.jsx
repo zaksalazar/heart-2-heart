@@ -10,46 +10,56 @@ const Faq = () => {
         <div className="w-full md:w-2/3">
           <div className="mb-4">
             <h3 className="text-xl font-semibold">
-              What is something we can put here?
+              What types of items does your non-profit accept as donations?
             </h3>
           </div>
           <div className="mb-16">
             <p>
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
+              Our non-profit accepts a wide range of items as donations,
+              including clothing, shoes, blankets, bedding, toys, books, and
+              non-perishable food items. We also accept donations of larger
+              items such as furniture and appliances on a case-by-case basis.
             </p>
           </div>
           <div className="mb-4">
             <h3 className="text-xl font-semibold">
-              What is something we can put here?
+              How do families in need apply to receive donations from your
+              organization?
             </h3>
           </div>
           <div className="mb-16">
             <p>
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
+              Families in need can apply to receive donations from our
+              organization by creating an account and filling out a simple
+              online application form. They will need to provide some basic
+              information about their family and the types of items they are in
+              need of.
             </p>
           </div>
           <div className="mb-4">
             <h3 className="text-xl font-semibold">
-              What is something we can put here?
+              Can I make a monetary donation instead of donating goods?
             </h3>
           </div>
           <div className="mb-16">
             <p>
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
+              Currently we are not accepting any monetary donations, but that is
+              something we will be working on in the future.
             </p>
           </div>
           <div className="mb-4">
             <h3 className="text-xl font-semibold">
-              What is something we can put here?
+              Are there any specific geographic areas or demographic groups that
+              your non-profit focuses on helping?
             </h3>
           </div>
           <div className="mb-16">
             <p>
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
-              SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG SoMeThInG
+              Currently we are only operating in Los Angeles County, Orange
+              County, and Riverside County. We primarily focus on serving those
+              who live in poverty or who are experiencing economic hardship. We
+              do not discriminate on the basis of race, ethnicity, religion, or
+              any other demographic characteristic.
             </p>
           </div>
         </div>
