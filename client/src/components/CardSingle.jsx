@@ -25,12 +25,11 @@ const CardSingle = ({ cardData = {} }) => {
             </div>
           </a>
           <div className="flex flex-col justify-center items-center mb-3">
-            <button
-              to={`/send`}
-              className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm"
-            >
-              Help this Family
-            </button>
+            <Link to={`/send`}>
+              <button className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
+                Help this Family
+              </button>
+            </Link>
           </div>
         </div>
       </div>

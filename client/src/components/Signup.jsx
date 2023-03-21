@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MdErrorOutline } from "react-icons/md";
 
-import Auth from '../utils/auth'
-
+import Auth from "../utils/auth";
 
 const Signup = () => {
   const [ userData, setUserData ] = useState({
@@ -11,6 +10,7 @@ const Signup = () => {
     lastname: '',
     email: '',
     password: '',
+
   });
 
   useEffect(() => {
@@ -18,8 +18,8 @@ const Signup = () => {
   },[userData])
 
   const handleUserChange = (event) => {
-    const {name, value} = event.target;
-    setUserData({...userData, [name]: value})
+    const { name, value } = event.target;
+    setUserData({ ...userData, [name]: value });
   };
 
 const createUser = async (event) => {
@@ -47,8 +47,9 @@ const createUser = async (event) => {
 };
 
 
+
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center p-10 bg-slate-400">
       <div>
         <div className="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
           <div className="self-center mb-2 text-xl font-bold text-black sm:text-2xl ">
@@ -56,13 +57,9 @@ const createUser = async (event) => {
           </div>
           <span className="justify-center text-sm text-center text-black flex-items-center">
             Already have an account?
-            <a
-              href="#"
-              target="_blank"
-              className="text-sm text-blue-500 underline hover:text-blue-700"
-            >
+            <span className="pl-3 text-sm text-blue-500 underline hover:text-blue-700">
               Sign in
-            </a>
+            </span>
           </span>
           <div className="p-6 mt-8">
             <form action="#">
@@ -169,7 +166,7 @@ const createUser = async (event) => {
               <div className="flex w-full my-4">
                 <button
                   onClick={createUser}
-                  className="py-2 px-4  bg-blue-600 hover:bg-red-700 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                  className="py-2 px-4  bg-red-600 hover:bg-red-700 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                 >
                   Sign Up
                 </button>
