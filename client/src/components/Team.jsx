@@ -7,14 +7,19 @@ const Team = () => {
         Professional Team
       </p>
       <p class="mb-12 text-xl font-normal text-center text-gray-500 ">
-      Recently, one of our team members had an encounter with a homeless mother and her two year old daughter. After exhausting every resource over two days to try and find her assistance, he realized the system is broken. Ultimately he called upon the aid of friends and family, to help the mother out and get her out of the rain and freezing temperatures. From this, Heart-2-Heart was born. 
+        Recently, one of our team members had an encounter with a homeless
+        mother and her two year old daughter. After exhausting every resource
+        over two days to try and find her assistance, he realized the system is
+        broken. Ultimately he called upon the aid of friends and family, to help
+        the mother out and get her out of the rain and freezing temperatures.
+        From this, Heart-2-Heart was born.
       </p>
       <div class="flex flex-col items-center md:flex-row justify-center">
         <div class="p-4">
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="/assets/images/canaan.webp"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/canaan.webp"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -23,7 +28,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 ">Canaan</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              World Renowned Drone Pilot 
+              World Renowned Drone Pilot
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -58,7 +63,7 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="/assets/images/Zak.png"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/Zak.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -67,7 +72,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Zak</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md">
-              Park Ranger Extraordinaire 
+              Park Ranger Extraordinaire
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
@@ -102,7 +107,7 @@ const Team = () => {
           <div class="mb-4 text-center opacity-90">
             <a href="#" class="relative block">
               <img
-                src="/assets/images/rudy.png"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/rudy.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -147,7 +152,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt="profil"
-                src="/assets/images/JohnKang.jpeg"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/John.png"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -155,9 +160,7 @@ const Team = () => {
           <div class="text-center">
             <p class="text-2xl text-gray-800 dark:text-white">John</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
-            <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-              John 
-            </p>
+            <p class="max-w-xs py-4 font-light text-gray-500 text-md ">John</p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
             <a href="https://github.com/JYK33">
@@ -192,7 +195,7 @@ const Team = () => {
             <a href="#" class="relative block">
               <img
                 alt=""
-                src="/assets/images/dillon.jpg"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/dillon.jpg"
                 class="mx-auto object-cover rounded-full h-40 w-40 "
               />
             </a>
@@ -202,7 +205,7 @@ const Team = () => {
             <p class="text-2xl text-gray-800 dark:text-white">Dillon</p>
             <p class="text-xl font-light text-gray-500 ">Developer</p>
             <p class="max-w-xs py-4 font-light text-gray-500 text-md ">
-            Bachelors of Engineering
+              Bachelors of Engineering
             </p>
           </div>
           <div class="flex justify-center space-x-4 items-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">

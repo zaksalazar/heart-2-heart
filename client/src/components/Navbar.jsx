@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -63,7 +64,7 @@ function Navbar() {
                 </li>
                 <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                   <a>Team</a>
-                  {/* <Link to='/aboutus'>About Us</Link> */}
+                  <Link to="/aboutus">About Us</Link>
                 </li>
                 <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                   <a>FAQ</a>
@@ -74,14 +75,16 @@ function Navbar() {
           <div aria-label="Home. logo" role="img">
             <img
               className="max-w-[100px] md:w-auto"
-              src="assets/images/logo1.png"
+              src="https://h-2-h.s3.us-west-2.amazonaws.com/logo1.png"
               alt="logo"
             />
           </div>
           {/* <button className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-red-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-red-700 text-red-700 px-4 sm:px-8 py-1 sm:py-3 text-sm"> */}
-          <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
-            Sign In
-          </button>
+          <Link to={`/Login`}>
+            <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm">
+              Sign In
+            </button>
+          </Link>
         </div>
       </nav>
     </div>

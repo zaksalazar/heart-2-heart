@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import background from "/public/assets/images/fam1.webp";
-import Drop from "./Drop";
 import Card from "./Card";
+import Navbar from "./Navbar";
 
 const ViewPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -27,7 +26,7 @@ const ViewPosts = () => {
   return (
     <>
       {loading && "loading data..."}
-      <div className="bg-[url('/assets/images/fam1.webp')] bg-no-repeat bg-cover bg-[height:844px] bg-scroll">
+      <div className="bg-[url('https://h-2-h.s3.us-west-2.amazonaws.com/fam1.webp')] bg-no-repeat bg-cover bg-[height:844px] bg-scroll">
         <div className="flex flex-col items-center">
           <div className="mt" role="img">
             <img

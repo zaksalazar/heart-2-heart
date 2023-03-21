@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import CardSingle from "./CardSingle";
+import Navbar from "./Navbar";
 
 const Post = () => {
   const [post, setPost] = useState([]);
