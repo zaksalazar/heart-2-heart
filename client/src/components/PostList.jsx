@@ -37,15 +37,15 @@ const ViewPosts = () => {
           </div>
           <div className="flex items-center justify-between">
             <div className="flex flex-col items-center mt-5">
-              <p className="mb-4 text-4xl font-bold text-gray-800">
+              <p className="mb-4 text-4xl font-bold text-white">
                 Families in Need
               </p>
-              <p className="text-2xl font-light text-gray-400">Select one</p>
+              <p className="text-2xl font-light text-gray-100">Select one</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
             <div className="">
-              <div className="flex flex-col items-center">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 items-center">
                 {posts.map((cardData) => {
                   return (
                     <Link key={cardData?._id} to={`/posts/${cardData?._id}`}>

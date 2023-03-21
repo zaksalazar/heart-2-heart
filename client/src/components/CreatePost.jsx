@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Drop from "./Drop";
 import Auth from "../utils/auth";
-import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 const NewPost = () => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [supplyData, setSupplyData] = useState({
@@ -36,17 +36,14 @@ const NewPost = () => {
   const createSupply = async () => {
     const token = Auth.getToken();
     try {
-      const response = await fetch(
-        "/api/supplies/upload",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: token ? `Bearer ${token}` : "",
-          },
-          body: JSON.stringify(supplyData),
-        }
-      );
+      const response = await fetch("/api/supplies/upload", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: token ? `Bearer ${token}` : "",
+        },
+        body: JSON.stringify(supplyData),
+      });
       const data = await response.json();
       return data;
     } catch (error) {
@@ -208,12 +205,14 @@ const NewPost = () => {
         />
       </div>
       <div className="mb-10">
-        <button
-          onClick={createSupply}
-          className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm"
-        >
-          Create Post
-        </button>
+        <Link to={`/posts`}>
+          <button
+            onClick={createSupply}
+            className="mt-1 w-40 focus:outline-none  focus:ring-red-700 bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-red-700 py-2 sm:py-4 text-sm"
+          >
+            Create Post
+          </button>
+        </Link>
       </div>
     </div>
   );

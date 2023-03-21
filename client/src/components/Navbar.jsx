@@ -58,18 +58,18 @@ function Navbar() {
                 </svg>
               </button>
               <ul className="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
-                <Link to="/">
+                <Link onClick={() => setShow(false)} to="/">
                   <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                     <a>Home</a>
                     {/* <Link to='/aboutus'>About Us</Link> */}
                   </li>
                 </Link>
-                <Link to="/about-us">
+                <Link onClick={() => setShow(false)} to="/about-us">
                   <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                     <a>Team</a>
                   </li>
                 </Link>
-                <Link to="/Faq">
+                <Link onClick={() => setShow(false)} to="/Faq">
                   <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                     <a>FAQ</a>
                   </li>
