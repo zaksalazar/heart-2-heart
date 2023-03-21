@@ -11,7 +11,7 @@ const ViewPosts = () => {
     try {
       async function fetchData() {
         setLoading(true);
-        const res = await fetch("http://localhost:3001/api/supplies");
+        const res = await fetch("/api/supplies");
         const data = await res.json();
         setLoading(false);
         setPosts(data);

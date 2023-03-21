@@ -37,7 +37,7 @@ const NewPost = () => {
     const token = Auth.getToken();
     try {
       const response = await fetch(
-        "http://localhost:3001/api/supplies/upload",
+        "/api/supplies/upload",
         {
           method: "POST",
           headers: {

@@ -26,7 +26,7 @@ const Signup = () => {
     event.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:3001/api/users/create-user",
+        "/api/users/create-user",
         {
           method: "POST",
           headers: {
