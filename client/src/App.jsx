@@ -3,7 +3,7 @@ import "./index.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Signup from "./components/Signup";
-import Homepage from "./components/Homepage";
+import Homepage from "./components/PageHomie";
 import CreatePost from "./components/CreatePost";
 import Post from "./components/Post";
 import PostsList from "./components/PostList";
