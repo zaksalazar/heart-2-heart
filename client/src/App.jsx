@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import SendDonation from "./components/SendDonation";
 import Team from "./components/Team";
 import Navbar from "./components/Navbar";
+import Faq from "./components/Faq";
 // import Dashboard from "./components/Dashboard";
 
 function App() {
@@ -75,6 +76,11 @@ function App() {
               <span>Navbar Testing</span>
             </Link>
           </li>
+          <li>
+            <Link to="/faq">
+              <span>Faq</span>
+            </Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -87,6 +93,7 @@ function App() {
         <Route path="/send" element={<SendDonation />} />
         <Route path="/about-us" element={<Team />} />
         <Route path="/navbar" element={<Navbar />} />
+        <Route path="/Faq" element={<Faq />} />
       </Routes>
     </Router>
   );
