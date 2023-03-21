@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 function Homepage() {
   const [show, setShow] = useState(false);
   return (
-    <div>
+    <div className="">
       <Navbar />
       <div
         className="bg-gray-400 bg-blend-soft-light bg-center"
@@ -22,15 +22,15 @@ function Homepage() {
           <div className="w-4/5 sm:w-2/3 lg:flex justify-center items-center flex-col">
             <div className="flex flex-col justify-center items-center">
               <img
-                className="max-w-[300px]  md:w-auto "
+                className="min-w-[300px]"
                 src="/assets/images/logo2.png"
                 alt="photo"
               />
             </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
+            <h1 className="text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl text-center text-gray-800 font-black leading-7 md:leading-10">
               People Helping People
             </h1>
-            <h2 className="text-red-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center">
+            <h2 className="text-red-700 bolder text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-center">
               Plain & Simple
             </h2>
             <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-800 font-normal text-center text-sm sm:text-lg">
