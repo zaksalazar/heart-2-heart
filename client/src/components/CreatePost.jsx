@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Drop from "./Drop";
-import Auth from "../utils/auth"
+import Auth from "../utils/auth";
+import Navbar from "./Navbar";
 const NewPost = () => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [supplyData, setSupplyData] = useState({
@@ -41,7 +42,7 @@ const NewPost = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": token?`Bearer ${token}`: ""
+            Authorization: token ? `Bearer ${token}` : "",
           },
           body: JSON.stringify(supplyData),
         }
@@ -56,7 +57,11 @@ const NewPost = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
-        <img className="w-4/5 mt-10" src="assets/images/fam1.jpg" alt="photo" />
+        <img
+          className="w-4/5 mt-10"
+          src="https://h-2-h.s3.us-west-2.amazonaws.com/fam1.jpg"
+          alt="photo"
+        />
       </div>
       {/* Location entry */}
       <div className="flex flex-col w-4/5 mb-3 mt-5">

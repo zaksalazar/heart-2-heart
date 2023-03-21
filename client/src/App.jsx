@@ -29,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <nav className="sticky border-b-2">
         <ul>
           <li>
@@ -72,11 +73,6 @@ function App() {
             </Link>
           </li>
           <li>
-            <Link to="/navbar">
-              <span>Navbar Testing</span>
-            </Link>
-          </li>
-          <li>
             <Link to="/faq">
               <span>Faq</span>
             </Link>
@@ -92,7 +88,6 @@ function App() {
         <Route path="/posts/:postId" element={<Post />} />
         <Route path="/send" element={<SendDonation />} />
         <Route path="/about-us" element={<Team />} />
-        <Route path="/navbar" element={<Navbar />} />
         <Route path="/Faq" element={<Faq />} />
       </Routes>
     </Router>

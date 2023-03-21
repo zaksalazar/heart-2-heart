@@ -1,19 +1,16 @@
 // First page rendered to user when they come to site
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import background from "/public/assets/images/familyPlaceholder.jpeg";
 import Explainer from "./Explainer";
-import Navbar from "./Navbar";
 
 function Homepage() {
   const [show, setShow] = useState(false);
   return (
     <div className="">
-      <Navbar />
       <div
         className="bg-gray-400 bg-blend-soft-light bg-center"
         style={{
-          backgroundImage: `url(${background})`,
+          backgroundImage: `url(https://h-2-h.s3.us-west-2.amazonaws.com/familyPlaceholder.jpeg)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
@@ -22,8 +19,8 @@ function Homepage() {
           <div className="w-4/5 sm:w-2/3 lg:flex justify-center items-center flex-col">
             <div className="flex flex-col justify-center items-center">
               <img
-                className="min-w-[300px]"
-                src="/assets/images/logo2.png"
+                className="min-w-[250px] mb-3"
+                src="https://h-2-h.s3.us-west-2.amazonaws.com/logo-main.png"
                 alt="photo"
               />
             </div>
