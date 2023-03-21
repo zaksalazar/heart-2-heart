@@ -36,7 +36,7 @@ const s3 = new Aws.S3({
 // Route that logs in
 // POST http://localhost:3001/api/users/login
 router.post('/login', async ( {body}, res ) => {
-    const user = await User.findOne({  username: body.username  });
+    const user = await User.findOne({ email: body.email  });
     if (!user) {
       return res.status(400).json({ message: "Can't find this user" });
     }
