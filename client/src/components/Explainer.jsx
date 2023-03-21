@@ -46,7 +46,7 @@ function Explainer() {
                     tabIndex={0}
                     className="focus:outline-none text-lg font-bold leading-tight text-gray-800"
                   >
-                    1. Family in need
+                    Family in need
                   </h2>
                   <p
                     tabIndex={0}

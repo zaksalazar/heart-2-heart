@@ -21,10 +21,11 @@ const CardSingle = ({ cardData = {} }) => {
             <div className="w-full p-4 bg-white">
               <p className="font-medium text-red-500 text-md">{county}</p>
               <p className="mb-2 text-xl font-medium text-gray-800">{title}</p>
-              <div className="flex flex-row items-start">
+              {/* <p className="mb-2 text-xl font-medium text-gray-800">{tags}</p> */}
+              <div className="flex flex-row flex-wrap items-start">
                 {tags.map((tagData) => {
                   return (
-                    <p className="py-2 px-3 mx-1 text-xs rounded inline-block whitespace-nowrap text-center bg-[rgb(10,177,164)] text-white align-baseline font-bold uppercase leading-none">
+                    <p className="py-2 px-3 m-1 text-xs rounded inline-block whitespace-nowrap text-center bg-[rgb(10,177,164)] text-white align-baseline font-bold uppercase leading-none">
                       {tagData}
                     </p>
                   );
