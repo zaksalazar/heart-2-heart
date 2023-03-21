@@ -1,7 +1,46 @@
-import React from "react";
-import auth from "../utils/auth";
+import React, { useState, useEffect } from "react";
+import Auth from "../utils/auth";
 
 const Login = () => {
+  const [ userInfo, setUserInfo ] = useState({ email: '', password: '' });
+
+  
+  const handleUserInfo = (event) => {
+    const { name, value } = event.target;
+    setUserInfo({ ...userInfo, [name]: value });
+  };
+
+  useEffect(() => {
+    console.log(userInfo);
+  },[userInfo])
+
+const loginUser = async (event) => {
+  event.preventDefault();
+  try {
+    const response = await fetch(
+      "http://localhost:3001/api/users/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: userInfo.email,
+          password: userInfo.password,
+        }),
+      }
+    );
+    if (response.ok){
+    const data = await response.json();
+    console.log(data);
+    Auth.login(data.token);
+    return data;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
   return (
     <div className="flex justify-center p-10 bg-slate-400">
       <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow  sm:px-6 md:px-8 lg:px-10">
@@ -28,6 +67,9 @@ const Login = () => {
                   id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4  text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
                   placeholder="Your email"
+                  name="email"
+                  onChange={(e) => handleUserInfo(e)}
+                  value={userInfo.email}
                 />
               </div>
             </div>
@@ -49,6 +91,9 @@ const Login = () => {
                   id="sign-in-email"
                   className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your password"
+                  name='password'
+                  onChange={(e) => handleUserInfo(e)}
+                  value={userInfo.password}
                 />
               </div>
             </div>
@@ -64,6 +109,7 @@ const Login = () => {
             </div>
             <div className="flex w-full">
               <button
+              onClick={loginUser}
                 type="submit"
                 className="py-2 px-4  bg-red-600 hover:bg-red-700 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
               >
