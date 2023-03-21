@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SendDonation from "./SendDonation";
 
 const CardSingle = ({ cardData = {} }) => {
-  const { title = "", description = "", county = "", tags = "" } = cardData;
+  console.log("CardSingle", cardData);
+  const { title = "", description = "", county = "", tags = [] } = cardData;
 
   return (
     <div>
@@ -16,17 +17,17 @@ const CardSingle = ({ cardData = {} }) => {
             <img
               alt="card photo"
               src="https://h-2-h.s3.us-west-2.amazonaws.com/fam1.jpg"
-              className="object-cover w-full max-h-40"
+              className="object-cover w-full max-h-90"
             />
             <div className="w-full p-4 bg-white">
               <p className="font-medium text-red-500 text-md">{county}</p>
               <p className="mb-2 text-xl font-medium text-gray-800">{title}</p>
               {/* <p className="mb-2 text-xl font-medium text-gray-800">{tags}</p> */}
               <div className="flex flex-row flex-wrap items-start">
-                {tags.map((tagData) => {
+                {tags.map((tags) => {
                   return (
                     <p className="py-2 px-3 m-1 text-xs rounded inline-block whitespace-nowrap text-center bg-[rgb(10,177,164)] text-white align-baseline font-bold uppercase leading-none">
-                      {tagData}
+                      {tags}
                     </p>
                   );
                 })}

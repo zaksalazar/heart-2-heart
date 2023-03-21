@@ -45,7 +45,7 @@ const ViewPosts = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="">
-              <div className="flex flex-col items-center">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 items-center">
                 {posts.map((cardData) => {
                   return (
                     <Link key={cardData?._id} to={`/posts/${cardData?._id}`}>
