@@ -14,5 +14,8 @@
   "author": "",
   "devDependencies": {
     "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "node": "^19.8.1"
   }
 }
