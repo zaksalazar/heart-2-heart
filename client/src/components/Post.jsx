@@ -12,7 +12,7 @@ const Post = () => {
     try {
       async function fetchData() {
         setLoading(true);
-        const res = await fetch(`http://localhost:3001/api/supplies/${postId}`);
+        const res = await fetch(`/api/supplies/${postId}`);
         const data = await res.json();
         setLoading(false);
         setPost(data);
